@@ -8,7 +8,7 @@ class Conteudo {
   final String equacao;
   final Color corBotao;
   final Color corConteudo;
-
+  final Questao questao; 
 
   Conteudo({
     required this.imagem,
@@ -18,5 +18,6 @@ class Conteudo {
     required this.equacao,
     required this.corBotao,
     required this.corConteudo,
+    required this.questao,
   });
 }
