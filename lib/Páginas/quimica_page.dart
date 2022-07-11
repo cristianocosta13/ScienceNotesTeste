@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:sciencenotescris/widgets/card_conteudo.dart';
 import 'package:sciencenotescris/domain/conteudo.dart';
+import 'package:sciencenotescris/domain/questao.dart';
 import 'package:sciencenotescris/widgets/lista_conteudo.dart';
 
 class QuimicaPage extends StatefulWidget {
@@ -12,7 +13,17 @@ class QuimicaPage extends StatefulWidget {
 }
 
 class _QuimicaPageState extends State<QuimicaPage> {
+  Questao questao1 = Questao(
+    pergunta: 'As raízes desempenham importantes funções para a sobrevivência da planta e ocupam um espaço muito maior que a parte aérea da planta. Com relação ao sistema radicular, sabe-se que',
+    alt1: 'As eucotiledôneas possuem sistema radicular fasciculado ou em cabeleira.',
+    alt2: 'As funções primordiais das raízes são a fotossíntese e o armazenamento de matéria orgânica.', 
+    alt3: 'O ápice da raiz é recoberto pela coifa, uma massa de células parenquimáticas vivas que revestem e protegem o ápice.',
+    alt4: 'As monocotiledôneas possuem sistema radicular pivotante.', 
+    alt5: 'As pluricotiledôneas não possuem sistema radicular.',
+  ); 
+
   Conteudo conteudoQ1 = Conteudo(
+    questao: questao1,
     corConteudo: Colors.deepPurple.shade100,
     corBotao: Colors.deepPurple.shade200,
     imagem: 'https://i.ibb.co/gZdk4HV/1655758601159.png',
@@ -22,6 +33,7 @@ class _QuimicaPageState extends State<QuimicaPage> {
     equacao: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."',
   );
   Conteudo conteudoQ2 = Conteudo(
+    questao: questao1,
     corConteudo: Colors.deepPurple.shade100,
     corBotao: Colors.deepPurple.shade200,
     imagem: 'https://i.ibb.co/MC19M2f/1655759767893.png',
@@ -31,6 +43,7 @@ class _QuimicaPageState extends State<QuimicaPage> {
     equacao: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."',
   );
   Conteudo conteudoQ3 = Conteudo(
+    questao: questao1,
     corConteudo: Colors.deepPurple.shade100,
     corBotao: Colors.deepPurple.shade200,
     imagem: 'https://i.ibb.co/JzsJ7Tr/1655759092258.png',
@@ -40,6 +53,7 @@ class _QuimicaPageState extends State<QuimicaPage> {
     equacao: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."',
   );
   Conteudo conteudoQ4 = Conteudo(
+    questao: questao1,
     corConteudo: Colors.deepPurple.shade100,
     corBotao: Colors.deepPurple.shade200,
     imagem: 'https://i.ibb.co/L8FxXzL/1655759467478.png',
@@ -49,6 +63,7 @@ class _QuimicaPageState extends State<QuimicaPage> {
     equacao: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."',
   );
   Conteudo conteudoQ5 = Conteudo(
+    questao: questao1,
     corConteudo: Colors.deepPurple.shade100,
     corBotao: Colors.deepPurple.shade200,
     imagem: 'https://i.ibb.co/tMh5S28/1655760652852.png',
@@ -58,6 +73,7 @@ class _QuimicaPageState extends State<QuimicaPage> {
     equacao: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."',
   );
   Conteudo conteudoQ6 = Conteudo(
+    questao: questao1,
     corConteudo: Colors.deepPurple.shade100,
     corBotao: Colors.deepPurple.shade200,
     imagem: 'https://i.ibb.co/WG8kBVY/1655760550383.png',
@@ -67,6 +83,7 @@ class _QuimicaPageState extends State<QuimicaPage> {
     equacao: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."',
   );
   Conteudo conteudoQ7 = Conteudo(
+    questao: questao1,
     corConteudo: Colors.deepPurple.shade100,
     corBotao: Colors.deepPurple.shade200,
     imagem: 'https://www.cursou.com.br/wp-content/uploads/2014/09/curso-de-quimica.png',
@@ -76,6 +93,7 @@ class _QuimicaPageState extends State<QuimicaPage> {
     equacao: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."',
   );
   Conteudo conteudoQ8 = Conteudo(
+    questao: questao1,
     corConteudo: Colors.deepPurple.shade100,
     corBotao: Colors.deepPurple.shade200,
     imagem: 'https://i.ibb.co/SNFK8C5/1655760276452.png',
@@ -85,6 +103,7 @@ class _QuimicaPageState extends State<QuimicaPage> {
     equacao: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."',
   );
   Conteudo conteudoQ9 = Conteudo(
+    questao: questao1,
     corConteudo: Colors.deepPurple.shade100,
     corBotao: Colors.deepPurple.shade200,
     imagem: 'https://i.ibb.co/TBGnhqv/1655760111034.png',
@@ -94,6 +113,7 @@ class _QuimicaPageState extends State<QuimicaPage> {
     equacao: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."',
   );
   Conteudo conteudoQ10 = Conteudo(
+    questao: questao1,
     corConteudo: Colors.deepPurple.shade100,
     corBotao: Colors.deepPurple.shade200,
     imagem: 'https://i.ibb.co/wct6Mcw/1655758074035.png',
