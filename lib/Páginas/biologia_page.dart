@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:sciencenotescris/widgets/card_conteudo.dart';
 import 'package:sciencenotescris/domain/conteudo.dart';
+import 'package:sciencenotescris/domain/questao.dart';
 import 'package:sciencenotescris/widgets/lista_conteudo.dart';
 
 class BiologiaPage extends StatefulWidget {
@@ -11,7 +12,17 @@ class BiologiaPage extends StatefulWidget {
 }
 
 class _BiologiaPageState extends State<BiologiaPage> {
+  Questao questao1 = Questao(
+    pergunta: 'As raízes desempenham importantes funções para a sobrevivência da planta e ocupam um espaço muito maior que a parte aérea da planta. Com relação ao sistema radicular, sabe-se que',
+    alt1: 'As eucotiledôneas possuem sistema radicular fasciculado ou em cabeleira.',
+    alt2: 'As funções primordiais das raízes são a fotossíntese e o armazenamento de matéria orgânica.', 
+    alt3: 'O ápice da raiz é recoberto pela coifa, uma massa de células parenquimáticas vivas que revestem e protegem o ápice.',
+    alt4: 'As monocotiledôneas possuem sistema radicular pivotante.', 
+    alt5: 'As pluricotiledôneas não possuem sistema radicular.',
+  ); 
+
   Conteudo conteudoB1 = Conteudo(
+    questao: questao1, 
     corConteudo: Colors.green.shade100,
     corBotao: Colors.green.shade200,
     imagem: 'https://cdn-icons-png.flaticon.com/512/6166/6166874.png',
@@ -21,6 +32,7 @@ class _BiologiaPageState extends State<BiologiaPage> {
     equacao: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."',
   );
   Conteudo conteudoB2 = Conteudo(
+    questao: questao1, 
     corConteudo: Colors.green.shade100,
     corBotao: Colors.green.shade200,
     imagem: 'https://garciareboll.com/wp-content/uploads/2017/07/garciareboll-iconos-citologia.png.png',
@@ -30,6 +42,7 @@ class _BiologiaPageState extends State<BiologiaPage> {
     equacao: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."',
   );
   Conteudo conteudoB3 = Conteudo(
+    questao: questao1, 
     corConteudo: Colors.green.shade100,
     corBotao: Colors.green.shade200,
     imagem: 'https://grupofemina.com/wp-content/uploads/2022/01/02-241x300.png',
@@ -39,6 +52,7 @@ class _BiologiaPageState extends State<BiologiaPage> {
     equacao: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."',
   );
   Conteudo conteudoB4 = Conteudo(
+    questao: questao1, 
     corConteudo: Colors.green.shade100,
     corBotao: Colors.green.shade200,
     imagem: 'https://cdn.pixabay.com/photo/2020/07/02/18/42/fetus-5363907_960_720.png',
@@ -48,6 +62,7 @@ class _BiologiaPageState extends State<BiologiaPage> {
     equacao: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."',
   );
   Conteudo conteudoB5 = Conteudo(
+    questao: questao1, 
     corConteudo: Colors.green.shade100,
     corBotao: Colors.green.shade200,
     imagem: 'https://play-lh.googleusercontent.com/h9lqZpq5QwJaWtvg0YAoRomL3czookBezy4UOaBdYDdt_bMrA-P9t1soqJIkWDe67M0',
@@ -57,6 +72,7 @@ class _BiologiaPageState extends State<BiologiaPage> {
     equacao: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."',
   );
   Conteudo conteudoB6 = Conteudo(
+    questao: questao1, 
     corConteudo: Colors.green.shade100,
     corBotao: Colors.green.shade200,
     imagem: 'https://www.cursou.com.br/wp-content/uploads/2017/08/curso-de-Fisiologia-Humana.png',
@@ -66,6 +82,7 @@ class _BiologiaPageState extends State<BiologiaPage> {
     equacao: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."',
   );
   Conteudo conteudoB7 = Conteudo(
+    questao: questao1, 
     corConteudo: Colors.green.shade100,
     corBotao: Colors.green.shade200,
     imagem: 'https://fleminggenetica.com.br/wp-content/uploads/2019/03/icon-exames.png',
@@ -75,6 +92,7 @@ class _BiologiaPageState extends State<BiologiaPage> {
     equacao: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."',
   );
   Conteudo conteudoB8 = Conteudo(
+    questao: questao1, 
     corConteudo: Colors.green.shade100,
     corBotao: Colors.green.shade200,
     imagem: 'https://i.ibb.co/37YGrGC/1655762850490.png',
@@ -84,6 +102,7 @@ class _BiologiaPageState extends State<BiologiaPage> {
     equacao: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."',
   );
   Conteudo conteudoB9 = Conteudo(
+    questao: questao1, 
     corConteudo: Colors.green.shade100,
     corBotao: Colors.green.shade200,
     imagem: 'https://i.ibb.co/ydMB6yL/1655762519638.png',
@@ -93,6 +112,7 @@ class _BiologiaPageState extends State<BiologiaPage> {
     equacao: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."',
   );
   Conteudo conteudoB10 = Conteudo(
+    questao: questao1, 
     corConteudo: Colors.green.shade100,
     corBotao: Colors.green.shade200,
     imagem: 'https://i.ibb.co/4M7BbCL/1655762438016.png',
