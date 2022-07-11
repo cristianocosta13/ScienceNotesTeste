@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:sciencenotescris/widgets/card_conteudo.dart';
 import 'package:sciencenotescris/domain/conteudo.dart';
+import 'package:sciencenotescris/domain/questao.dart';
 import 'package:sciencenotescris/widgets/lista_conteudo.dart';
 
 class FisicaPage extends StatefulWidget {
@@ -11,7 +12,17 @@ class FisicaPage extends StatefulWidget {
 }
 
 class _FisicaPageState extends State<FisicaPage> {
+  Questao questao1 = Questao(
+    pergunta: 'As raízes desempenham importantes funções para a sobrevivência da planta e ocupam um espaço muito maior que a parte aérea da planta. Com relação ao sistema radicular, sabe-se que',
+    alt1: 'As eucotiledôneas possuem sistema radicular fasciculado ou em cabeleira.',
+    alt2: 'As funções primordiais das raízes são a fotossíntese e o armazenamento de matéria orgânica.', 
+    alt3: 'O ápice da raiz é recoberto pela coifa, uma massa de células parenquimáticas vivas que revestem e protegem o ápice.',
+    alt4: 'As monocotiledôneas possuem sistema radicular pivotante.', 
+    alt5: 'As pluricotiledôneas não possuem sistema radicular.',
+  ); 
+
   Conteudo conteudoF1 = Conteudo(
+    questao: questao1, 
     corConteudo: Colors.blue.shade100,
     corBotao: Colors.blue.shade200,
     imagem: 'https://i.ibb.co/NWGhwy1/1655756102311.png',
@@ -21,6 +32,7 @@ class _FisicaPageState extends State<FisicaPage> {
     equacao: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."',
   );
   Conteudo conteudoF2 = Conteudo(
+    questao: questao1, 
     corConteudo: Colors.blue.shade100,
     corBotao: Colors.blue.shade200,
     imagem: 'https://i.ibb.co/kB1zXTv/1655757349218.png',
@@ -30,6 +42,7 @@ class _FisicaPageState extends State<FisicaPage> {
     equacao: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."',
   );
   Conteudo conteudoF3 = Conteudo(
+    questao: questao1, 
     corConteudo: Colors.blue.shade100,
     corBotao: Colors.blue.shade200,
     imagem: 'https://i.ibb.co/xmncRFb/1655757553840.png',
@@ -39,6 +52,7 @@ class _FisicaPageState extends State<FisicaPage> {
     equacao: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."',
   );
   Conteudo conteudoF4 = Conteudo(
+    questao: questao1, 
     corConteudo: Colors.blue.shade100,
     corBotao: Colors.blue.shade200,
     imagem: 'https://i.ibb.co/S5MNh20/1655757687571.png',
@@ -48,6 +62,7 @@ class _FisicaPageState extends State<FisicaPage> {
     equacao: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."',
   );
   Conteudo conteudoF5 = Conteudo(
+    questao: questao1, 
     corConteudo: Colors.blue.shade100,
     corBotao: Colors.blue.shade200,
     imagem: 'https://i.ibb.co/r6YLXzf/1655757858876.png',
@@ -57,7 +72,7 @@ class _FisicaPageState extends State<FisicaPage> {
     equacao: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."',
   );
   Conteudo conteudoF6 = Conteudo(
-
+    questao: questao1, 
     corConteudo: Colors.blue.shade100,
     corBotao: Colors.blue.shade200,
     imagem: 'https://i.ibb.co/r309HRp/1655762704824.png',
@@ -67,7 +82,7 @@ class _FisicaPageState extends State<FisicaPage> {
     equacao: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."',
   );
   Conteudo conteudoF7 = Conteudo(
-
+    questao: questao1, 
     corConteudo: Colors.blue.shade100,
     corBotao: Colors.blue.shade200,
     imagem: 'https://i.ibb.co/MBN8RVw/1655761475200.png',
@@ -77,7 +92,7 @@ class _FisicaPageState extends State<FisicaPage> {
     equacao: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."',
   );
   Conteudo conteudoF8 = Conteudo(
-
+    questao: questao1, 
     corConteudo: Colors.blue.shade100,
     corBotao: Colors.blue.shade200,
     imagem: 'https://i.ibb.co/nsnDktn/1655761574377.png',
@@ -87,7 +102,7 @@ class _FisicaPageState extends State<FisicaPage> {
     equacao: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."',
   );
   Conteudo conteudoF9 = Conteudo(
-
+    questao: questao1, 
     corConteudo: Colors.blue.shade100,
     corBotao: Colors.blue.shade200,
     imagem: 'https://i.ibb.co/RjJH62M/1655761710933.png',
@@ -97,7 +112,7 @@ class _FisicaPageState extends State<FisicaPage> {
     equacao: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."',
   );
   Conteudo conteudoF10 = Conteudo(
-
+    questao: questao1, 
     corConteudo: Colors.blue.shade100,
     corBotao: Colors.blue.shade200,
     imagem: 'https://i.ibb.co/Xt7HVyv/1655761815569.png',
