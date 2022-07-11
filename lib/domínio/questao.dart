@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class Conteudo {
+class Questao {
   final String pergunta;
   final String alt1;
   final String alt2;
@@ -11,7 +11,7 @@ class Conteudo {
   //final Color corConteudo;
 
 
-  Conteudo({
+  Questao({
     required this.pergunta,
     required this.alt1,
     required this.alt2,
