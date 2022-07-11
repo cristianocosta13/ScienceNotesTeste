@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 
 class CardQuestao extends StatefulWidget {
   final int values;
-  const CardQuestao({Key? key, required this.values}) : super(key: key);
+  final Questao questao; 
+  const CardQuestao({Key? key, required this.values, required this.questao}) : super(key: key);
 
   @override
   State<CardQuestao> createState() => _CardQuestaoState();
@@ -27,10 +28,11 @@ class _CardQuestaoState extends State<CardQuestao> {
                 ),
                 textAlign: TextAlign.justify,
               ),
-              Text('Os organismos vivos são constituídos de várias '
-                  'macromoléculas orgânicas, conhecidas como polímeros '
-                  'biológicos. Sobre essas macromoléculas, é incorreto afirmar:'
-              ),
+              Texto(widget.questao.pergunta), 
+              //Text('Os organismos vivos são constituídos de várias '
+                  //'macromoléculas orgânicas, conhecidas como polímeros '
+                  //'biológicos. Sobre essas macromoléculas, é incorreto afirmar:'
+              //),
               Radio(
                 value: 1,
                 groupValue: selectedValue,
@@ -41,7 +43,8 @@ class _CardQuestaoState extends State<CardQuestao> {
                 },
               ),
               const SizedBox(width: 8,),
-              Text('Ácidos nucléicos são polímeros de monossacarídeos unidos por ligações glicosídicas, com funções estruturais.'),
+              Text(widget.quedtao.alt1), 
+              //Text('Ácidos nucléicos são polímeros de monossacarídeos unidos por ligações glicosídicas, com funções estruturais.'),
               const SizedBox(height: 8,),
               Radio(
                 value: 2,
@@ -53,7 +56,8 @@ class _CardQuestaoState extends State<CardQuestao> {
                 },
               ),
               const SizedBox(width: 8,),
-              Text('Os lipídeos são compostos formados por ácidos graxos, que podem constituir membranas celulares e exercer papéis importantes como hormônios.'),
+              Text(widget.quedtao.alt2), 
+              //Text('Os lipídeos são compostos formados por ácidos graxos, que podem constituir membranas celulares e exercer papéis importantes como hormônios.'),
               const SizedBox(height: 8,),
               Radio(
                 value: 3,
@@ -65,7 +69,8 @@ class _CardQuestaoState extends State<CardQuestao> {
                 },
               ),
               const SizedBox(width: 8,),
-              Text('Proteínas são polímeros de aminoácidos unidos por ligações peptídicas e que podem exercer funções enzimáticas, estruturais e energéticas.'),
+              Text(widget.quedtao.alt3), 
+              //Text('Proteínas são polímeros de aminoácidos unidos por ligações peptídicas e que podem exercer funções enzimáticas, estruturais e energéticas.'),
               const SizedBox(height: 8,),
               Radio(
                 value: 4,
@@ -77,7 +82,8 @@ class _CardQuestaoState extends State<CardQuestao> {
                 },
               ),
               const SizedBox(width: 8,),
-              Text('Carboidratos são conhecidos como açúcares, constituídos por carbono, hidrogênio e oxigênio, sendo as principais fontes de energia da célula.'),
+              Text(widget.quedtao.alt4), 
+              //Text('Carboidratos são conhecidos como açúcares, constituídos por carbono, hidrogênio e oxigênio, sendo as principais fontes de energia da célula.'),
               const SizedBox(height: 8,),
               Radio(
                 value: 5,
@@ -89,7 +95,8 @@ class _CardQuestaoState extends State<CardQuestao> {
                 },
               ),
               const SizedBox(width: 8,),
-              Text('Alguns tipos de polissacarídeos podem ser encontrados na estrutura da parede celular dos vegetais e também ser estocados como reservas energéticas em vegetais.'),
+              Text(widget.quedtao.alt5), 
+              //Text('Alguns tipos de polissacarídeos podem ser encontrados na estrutura da parede celular dos vegetais e também ser estocados como reservas energéticas em vegetais.'),
             ],
           ),
         ),
