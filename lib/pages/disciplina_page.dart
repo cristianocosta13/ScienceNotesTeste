@@ -25,7 +25,7 @@ class _DisciplinaState extends State<Disciplina> {
   List<Widget> _telas = [
     Resumo(),
     Videos(),
-    Questoes(),
+    Questoes(conteudo: widget.conteudo),
     Simulado(),
   ];
   int selectedIndex = 0;
