@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:sciencenotescris/pages/biologia_page.dart';
-import 'package:sciencenotescris/widgets/card_ciencias.dart';
-import 'package:sciencenotescris/pages/fisica_page.dart';
-import 'package:sciencenotescris/pages/quimica_page.dart';
+import 'package:sciencenotes/pages/biologia_page.dart';
+import 'package:sciencenotes/widgets/card_ciencias.dart';
+import 'package:sciencenotes/pages/fisica_page.dart';
+import 'package:sciencenotes/pages/quimica_page.dart';
 
 class HomePage extends StatefulWidget{
   const HomePage({Key? key}) : super(key: key);

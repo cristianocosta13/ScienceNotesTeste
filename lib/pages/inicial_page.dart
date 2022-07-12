@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:sciencenotescris/pages/home_page.dart';
+import 'package:sciencenotes/pages/home_page.dart';
 
 class InicialPage extends StatefulWidget {
   const InicialPage({Key? key}) : super(key: key);

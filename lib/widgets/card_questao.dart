@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:sciencenotes/domain/conteudo.dart';
 
 class CardQuestao extends StatefulWidget {
-  final Conteudo conteudo; 
-  const CardQuestao({Key? key, required this.conteudo,}) : super(key: key);
+  final Conteudo conteudo;
+  const CardQuestao({
+    Key? key,
+    required this.conteudo,
+  }) : super(key: key);
 
   @override
   State<CardQuestao> createState() => _CardQuestaoState();
@@ -21,13 +25,13 @@ class _CardQuestaoState extends State<CardQuestao> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text('Exercício 1: (UDESC 2008) ',
+              const Text('Exercício 1: (UDESC 2008) ',
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                 ),
                 textAlign: TextAlign.justify,
               ),
-              Texto(widget.conteudo.questao.pergunta), 
+              Text(widget.conteudo.questao.pergunta),
               //Text('Os organismos vivos são constituídos de várias '
                   //'macromoléculas orgânicas, conhecidas como polímeros '
                   //'biológicos. Sobre essas macromoléculas, é incorreto afirmar:'

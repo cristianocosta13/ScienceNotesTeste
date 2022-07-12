@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:sciencenotescris/pages/fisica_page.dart';
+import 'package:sciencenotes/pages/fisica_page.dart';
 
 class CardCiencias extends StatefulWidget {
   final String nomeCiencias;

@@ -2,12 +2,12 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
-import 'package:sciencenotescris/pages/resumo_page.dart';
-import 'package:sciencenotescris/pages/videos_page.dart';
-import 'package:sciencenotescris/pages/questoes_page.dart';
-import 'package:sciencenotescris/pages/simulado_page.dart';
-import 'package:sciencenotescris/pages/inicial_page.dart';
-import 'package:sciencenotescris/domain/conteudo.dart';
+import 'package:sciencenotes/pages/resumo_page.dart';
+import 'package:sciencenotes/pages/videos_page.dart';
+import 'package:sciencenotes/pages/questoes_page.dart';
+import 'package:sciencenotes/pages/simulado_page.dart';
+import 'package:sciencenotes/pages/inicial_page.dart';
+import 'package:sciencenotes/domain/conteudo.dart';
 
 class Disciplina extends StatefulWidget {
   final Conteudo conteudo;
@@ -22,16 +22,17 @@ class Disciplina extends StatefulWidget {
 }
 
 class _DisciplinaState extends State<Disciplina> {
-  List<Widget> _telas = [
-    Resumo(),
-    Videos(),
-    Questoes(conteudo: widget.conteudo),
-    Simulado(),
-  ];
   int selectedIndex = 0;
   @override
 
   Widget build(BuildContext context) {
+    List<Widget> _telas = [
+      const Resumo(),
+      const Videos(),
+      Questoes(conteudo: widget.conteudo),
+      const Simulado(),
+    ];
+
     return  Scaffold(
       appBar: AppBar(
         title: Text(

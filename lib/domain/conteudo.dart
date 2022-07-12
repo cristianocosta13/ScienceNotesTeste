@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:sciencenotes/domain/questao.dart';
 class Conteudo {
   final String imagem;
   final String titulo;

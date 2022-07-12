@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:sciencenotescris/widgets/card_conteudo.dart';
-import 'package:sciencenotescris/domain/conteudo.dart';
+import 'package:sciencenotes/widgets/card_conteudo.dart';
+import 'package:sciencenotes/domain/conteudo.dart';
 
 class ListaConteudo extends StatefulWidget {
   final Conteudo conteudo1;

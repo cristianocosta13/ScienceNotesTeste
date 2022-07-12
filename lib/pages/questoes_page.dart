@@ -1,8 +1,8 @@
 import 'dart:ffi';
 
 import 'package:flutter/material.dart';
-import 'package:sciencenotescris/pages/conteudo.dart';
-import 'package:sciencenotescris/widgets/card_questao.dart';
+import 'package:sciencenotes/domain/conteudo.dart';
+import 'package:sciencenotes/widgets/card_questao.dart';
 
 class Questoes extends StatefulWidget {
   final Conteudo conteudo; 
@@ -17,18 +17,17 @@ class Questoes extends StatefulWidget {
 }
 
 class _QuestoesState extends State<Questoes> {
-  late CardQuestao cardQuestao;
 
   @override
   Widget build(BuildContext context) {
     return Container(
       child: ListView(
         children: [
-          cardQuestao(conteudo: widget.conteudo),
+          CardQuestao(conteudo: widget.conteudo),
           const SizedBox(height: 16,),
-          cardQuestao(conteudo: widget.conteudo),
+          CardQuestao(conteudo: widget.conteudo),
           const SizedBox(height: 16,),
-          cardQuestao(conteudo: widget.conteudo),
+          CardQuestao(conteudo: widget.conteudo),
           const SizedBox(height: 16,),
         ],
       ),
