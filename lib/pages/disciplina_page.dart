@@ -5,7 +5,7 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:sciencenotes/pages/resumo_page.dart';
 import 'package:sciencenotes/pages/videos_page.dart';
 import 'package:sciencenotes/pages/questoes_page.dart';
-import 'package:sciencenotes/pages/simulado_page.dart';
+import 'package:sciencenotes/pages/perfil_page.dart';
 import 'package:sciencenotes/pages/inicial_page.dart';
 import 'package:sciencenotes/domain/conteudo.dart';
 
@@ -30,7 +30,7 @@ class _DisciplinaState extends State<Disciplina> {
       const Resumo(),
       const Videos(),
       Questoes(conteudo: widget.conteudo),
-      const Simulado(),
+      const Perfil(),
     ];
 
     return  Scaffold(
@@ -64,7 +64,7 @@ class _DisciplinaState extends State<Disciplina> {
           BottomNavigationBarItem(
             icon: Icon(CupertinoIcons.pencil_circle), label: 'Questões',),
           BottomNavigationBarItem(
-            icon: Icon(CupertinoIcons.square_pencil), label: 'Simulado',),
+            icon: Icon(CupertinoIcons.person), label: 'Perfil',),
         ],
       ),
     );

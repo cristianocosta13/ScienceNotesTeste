@@ -1,4 +1,4 @@
-  import 'package:flutter/material.dart';
+import 'package:flutter/material.dart';
 import 'package:sciencenotes/data/BD.dart';
 import 'package:sciencenotes/widgets/card_conteudo.dart';
 import 'package:sciencenotes/domain/conteudo.dart';

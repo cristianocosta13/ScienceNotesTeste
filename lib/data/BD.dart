@@ -1,4 +1,90 @@
 
+import 'package:flutter/material.dart';
+import 'package:sciencenotes/domain/conteudo.dart';
+import 'package:sciencenotes/domain/questao.dart';
+
+class BD{
+  static List<Questao> listaQuestoesFisica = [
+    Questao(
+      pergunta: 'As raízes desempenham importantes funções para a sobrevivência da planta e ocupam um espaço muito maior que a parte aérea da planta. Com relação ao sistema radicular, sabe-se que',
+      alt1: 'As eucotiledôneas possuem sistema radicular fasciculado ou em cabeleira.',
+      alt2: 'As funções primordiais das raízes são a fotossíntese e o armazenamento de matéria orgânica.',
+      alt3: 'O ápice da raiz é recoberto pela coifa, uma massa de células parenquimáticas vivas que revestem e protegem o ápice.',
+      alt4: 'As monocotiledôneas possuem sistema radicular pivotante.',
+      alt5: 'As pluricotiledôneas não possuem sistema radicular.',
+    ),
+    Questao(
+      pergunta: 'As raízes desempenham importantes funções para a sobrevivência da planta e ocupam um espaço muito maior que a parte aérea da planta. Com relação ao sistema radicular, sabe-se que',
+      alt1: 'As eucotiledôneas possuem sistema radicular fasciculado ou em cabeleira.',
+      alt2: 'As funções primordiais das raízes são a fotossíntese e o armazenamento de matéria orgânica.',
+      alt3: 'O ápice da raiz é recoberto pela coifa, uma massa de células parenquimáticas vivas que revestem e protegem o ápice.',
+      alt4: 'As monocotiledôneas possuem sistema radicular pivotante.',
+      alt5: 'As pluricotiledôneas não possuem sistema radicular.',
+    ),
+    Questao(
+      pergunta: 'As raízes desempenham importantes funções para a sobrevivência da planta e ocupam um espaço muito maior que a parte aérea da planta. Com relação ao sistema radicular, sabe-se que',
+      alt1: 'As eucotiledôneas possuem sistema radicular fasciculado ou em cabeleira.',
+      alt2: 'As funções primordiais das raízes são a fotossíntese e o armazenamento de matéria orgânica.',
+      alt3: 'O ápice da raiz é recoberto pela coifa, uma massa de células parenquimáticas vivas que revestem e protegem o ápice.',
+      alt4: 'As monocotiledôneas possuem sistema radicular pivotante.',
+      alt5: 'As pluricotiledôneas não possuem sistema radicular.',
+    ),
+  ];
+
+  static List<Questao> listaQuestoesQuimica = [
+    Questao(
+      pergunta: 'As raízes desempenham importantes funções para a sobrevivência da planta e ocupam um espaço muito maior que a parte aérea da planta. Com relação ao sistema radicular, sabe-se que',
+      alt1: 'As eucotiledôneas possuem sistema radicular fasciculado ou em cabeleira.',
+      alt2: 'As funções primordiais das raízes são a fotossíntese e o armazenamento de matéria orgânica.',
+      alt3: 'O ápice da raiz é recoberto pela coifa, uma massa de células parenquimáticas vivas que revestem e protegem o ápice.',
+      alt4: 'As monocotiledôneas possuem sistema radicular pivotante.',
+      alt5: 'As pluricotiledôneas não possuem sistema radicular.',
+    ),
+    Questao(
+      pergunta: 'As raízes desempenham importantes funções para a sobrevivência da planta e ocupam um espaço muito maior que a parte aérea da planta. Com relação ao sistema radicular, sabe-se que',
+      alt1: 'As eucotiledôneas possuem sistema radicular fasciculado ou em cabeleira.',
+      alt2: 'As funções primordiais das raízes são a fotossíntese e o armazenamento de matéria orgânica.',
+      alt3: 'O ápice da raiz é recoberto pela coifa, uma massa de células parenquimáticas vivas que revestem e protegem o ápice.',
+      alt4: 'As monocotiledôneas possuem sistema radicular pivotante.',
+      alt5: 'As pluricotiledôneas não possuem sistema radicular.',
+    ),
+    Questao(
+      pergunta: 'As raízes desempenham importantes funções para a sobrevivência da planta e ocupam um espaço muito maior que a parte aérea da planta. Com relação ao sistema radicular, sabe-se que',
+      alt1: 'As eucotiledôneas possuem sistema radicular fasciculado ou em cabeleira.',
+      alt2: 'As funções primordiais das raízes são a fotossíntese e o armazenamento de matéria orgânica.',
+      alt3: 'O ápice da raiz é recoberto pela coifa, uma massa de células parenquimáticas vivas que revestem e protegem o ápice.',
+      alt4: 'As monocotiledôneas possuem sistema radicular pivotante.',
+      alt5: 'As pluricotiledôneas não possuem sistema radicular.',
+    ),
+  ];
+
+  static List<Questao> listaQuestoesBiologia = [
+    Questao(
+      pergunta: 'As raízes desempenham importantes funções para a sobrevivência da planta e ocupam um espaço muito maior que a parte aérea da planta. Com relação ao sistema radicular, sabe-se que',
+      alt1: 'As eucotiledôneas possuem sistema radicular fasciculado ou em cabeleira.',
+      alt2: 'As funções primordiais das raízes são a fotossíntese e o armazenamento de matéria orgânica.',
+      alt3: 'O ápice da raiz é recoberto pela coifa, uma massa de células parenquimáticas vivas que revestem e protegem o ápice.',
+      alt4: 'As monocotiledôneas possuem sistema radicular pivotante.',
+      alt5: 'As pluricotiledôneas não possuem sistema radicular.',
+    ),
+    Questao(
+      pergunta: 'As raízes desempenham importantes funções para a sobrevivência da planta e ocupam um espaço muito maior que a parte aérea da planta. Com relação ao sistema radicular, sabe-se que',
+      alt1: 'As eucotiledôneas possuem sistema radicular fasciculado ou em cabeleira.',
+      alt2: 'As funções primordiais das raízes são a fotossíntese e o armazenamento de matéria orgânica.',
+      alt3: 'O ápice da raiz é recoberto pela coifa, uma massa de células parenquimáticas vivas que revestem e protegem o ápice.',
+      alt4: 'As monocotiledôneas possuem sistema radicular pivotante.',
+      alt5: 'As pluricotiledôneas não possuem sistema radicular.',
+    ),
+    Questao(
+      pergunta: 'As raízes desempenham importantes funções para a sobrevivência da planta e ocupam um espaço muito maior que a parte aérea da planta. Com relação ao sistema radicular, sabe-se que',
+      alt1: 'As eucotiledôneas possuem sistema radicular fasciculado ou em cabeleira.',
+      alt2: 'As funções primordiais das raízes são a fotossíntese e o armazenamento de matéria orgânica.',
+      alt3: 'O ápice da raiz é recoberto pela coifa, uma massa de células parenquimáticas vivas que revestem e protegem o ápice.',
+      alt4: 'As monocotiledôneas possuem sistema radicular pivotante.',
+      alt5: 'As pluricotiledôneas não possuem sistema radicular.',
+    ),
+  ];
+
   static Questao questao1 = Questao(
     pergunta: 'As raízes desempenham importantes funções para a sobrevivência da planta e ocupam um espaço muito maior que a parte aérea da planta. Com relação ao sistema radicular, sabe-se que',
     alt1: 'As eucotiledôneas possuem sistema radicular fasciculado ou em cabeleira.',
@@ -10,7 +96,7 @@
 
   static List<Conteudo> listaFisica = [
     Conteudo(
-    questao: questao1,
+    questao: listaQuestoesFisica,
     corConteudo: Colors.blue.shade100,
     corBotao: Colors.blue.shade200,
     imagem: 'https://i.ibb.co/NWGhwy1/1655756102311.png',
@@ -20,7 +106,7 @@
     equacao: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."',
   ),
     Conteudo(
-    questao: questao1,
+    questao: listaQuestoesFisica,
     corConteudo: Colors.blue.shade100,
     corBotao: Colors.blue.shade200,
     imagem: 'https://i.ibb.co/kB1zXTv/1655757349218.png',
@@ -30,7 +116,7 @@
     equacao: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."',
   ),
     Conteudo(
-    questao: questao1,
+    questao: listaQuestoesFisica,
     corConteudo: Colors.blue.shade100,
     corBotao: Colors.blue.shade200,
     imagem: 'https://i.ibb.co/xmncRFb/1655757553840.png',
@@ -40,7 +126,7 @@
     equacao: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."',
   ),
     Conteudo(
-      questao: questao1,
+      questao: listaQuestoesFisica,
       corConteudo: Colors.blue.shade100,
       corBotao: Colors.blue.shade200,
       imagem: 'https://i.ibb.co/S5MNh20/1655757687571.png',
@@ -50,7 +136,7 @@
       equacao: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."',
     ),
     Conteudo(
-      questao: questao1,
+      questao: listaQuestoesFisica,
       corConteudo: Colors.blue.shade100,
       corBotao: Colors.blue.shade200,
       imagem: 'https://i.ibb.co/r6YLXzf/1655757858876.png',
@@ -60,7 +146,7 @@
       equacao: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."',
     ),
     Conteudo(
-      questao: questao1,
+      questao: listaQuestoesFisica,
       corConteudo: Colors.blue.shade100,
       corBotao: Colors.blue.shade200,
       imagem: 'https://i.ibb.co/r309HRp/1655762704824.png',
@@ -70,7 +156,7 @@
       equacao: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."',
     ),
     Conteudo(
-      questao: questao1,
+      questao: listaQuestoesFisica,
       corConteudo: Colors.blue.shade100,
       corBotao: Colors.blue.shade200,
       imagem: 'https://i.ibb.co/MBN8RVw/1655761475200.png',
@@ -80,7 +166,7 @@
       equacao: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."',
     ),
     Conteudo(
-      questao: questao1,
+      questao: listaQuestoesFisica,
       corConteudo: Colors.blue.shade100,
       corBotao: Colors.blue.shade200,
       imagem: 'https://i.ibb.co/nsnDktn/1655761574377.png',
@@ -90,7 +176,7 @@
       equacao: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."',
     ),
     Conteudo(
-      questao: questao1,
+      questao: listaQuestoesFisica,
       corConteudo: Colors.blue.shade100,
       corBotao: Colors.blue.shade200,
       imagem: 'https://i.ibb.co/RjJH62M/1655761710933.png',
@@ -100,7 +186,7 @@
       equacao: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."',
     ),
     Conteudo(
-      questao: questao1,
+      questao: listaQuestoesFisica,
       corConteudo: Colors.blue.shade100,
       corBotao: Colors.blue.shade200,
       imagem: 'https://i.ibb.co/Xt7HVyv/1655761815569.png',
@@ -113,7 +199,7 @@
 
   static List<Conteudo> listaQuimica = [
     Conteudo(
-      questao: questao1,
+      questao: listaQuestoesQuimica,
       corConteudo: Colors.deepPurple.shade100,
       corBotao: Colors.deepPurple.shade200,
       imagem: 'https://i.ibb.co/gZdk4HV/1655758601159.png',
@@ -123,7 +209,7 @@
       equacao: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."',
     ),
     Conteudo(
-      questao: questao1,
+      questao: listaQuestoesQuimica,
       corConteudo: Colors.deepPurple.shade100,
       corBotao: Colors.deepPurple.shade200,
       imagem: 'https://i.ibb.co/MC19M2f/1655759767893.png',
@@ -133,7 +219,7 @@
       equacao: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."',
     ),
     Conteudo(
-      questao: questao1,
+      questao: listaQuestoesQuimica,
       corConteudo: Colors.deepPurple.shade100,
       corBotao: Colors.deepPurple.shade200,
       imagem: 'https://i.ibb.co/JzsJ7Tr/1655759092258.png',
@@ -143,7 +229,7 @@
       equacao: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."',
     ),
     Conteudo(
-      questao: questao1,
+      questao: listaQuestoesQuimica,
       corConteudo: Colors.deepPurple.shade100,
       corBotao: Colors.deepPurple.shade200,
       imagem: 'https://i.ibb.co/L8FxXzL/1655759467478.png',
@@ -153,7 +239,7 @@
       equacao: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."',
     ),
     Conteudo(
-      questao: questao1,
+      questao: listaQuestoesQuimica,
       corConteudo: Colors.deepPurple.shade100,
       corBotao: Colors.deepPurple.shade200,
       imagem: 'https://i.ibb.co/tMh5S28/1655760652852.png',
@@ -163,7 +249,7 @@
       equacao: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."',
     ),
     Conteudo(
-      questao: questao1,
+      questao: listaQuestoesQuimica,
       corConteudo: Colors.deepPurple.shade100,
       corBotao: Colors.deepPurple.shade200,
       imagem: 'https://i.ibb.co/WG8kBVY/1655760550383.png',
@@ -173,7 +259,7 @@
       equacao: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."',
     ),
     Conteudo(
-      questao: questao1,
+      questao: listaQuestoesQuimica,
       corConteudo: Colors.deepPurple.shade100,
       corBotao: Colors.deepPurple.shade200,
       imagem: 'https://www.cursou.com.br/wp-content/uploads/2014/09/curso-de-quimica.png',
@@ -183,7 +269,7 @@
       equacao: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."',
     ),
     Conteudo(
-      questao: questao1,
+      questao: listaQuestoesQuimica,
       corConteudo: Colors.deepPurple.shade100,
       corBotao: Colors.deepPurple.shade200,
       imagem: 'https://i.ibb.co/SNFK8C5/1655760276452.png',
@@ -193,7 +279,7 @@
       equacao: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."',
     ),
     Conteudo(
-      questao: questao1,
+      questao: listaQuestoesQuimica,
       corConteudo: Colors.deepPurple.shade100,
       corBotao: Colors.deepPurple.shade200,
       imagem: 'https://i.ibb.co/TBGnhqv/1655760111034.png',
@@ -203,7 +289,7 @@
       equacao: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."',
     ),
     Conteudo(
-      questao: questao1,
+      questao: listaQuestoesQuimica,
       corConteudo: Colors.deepPurple.shade100,
       corBotao: Colors.deepPurple.shade200,
       imagem: 'https://i.ibb.co/wct6Mcw/1655758074035.png',
@@ -216,7 +302,7 @@
 
   static List<Conteudo> listaBiologia = [
     Conteudo(
-      questao: questao1,
+      questao: listaQuestoesBiologia,
       corConteudo: Colors.green.shade100,
       corBotao: Colors.green.shade200,
       imagem: 'https://garciareboll.com/wp-content/uploads/2017/07/garciareboll-iconos-citologia.png.png',
@@ -226,7 +312,7 @@
       equacao: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."',
     ),
     Conteudo(
-      questao: questao1,
+      questao: listaQuestoesBiologia,
       corConteudo: Colors.green.shade100,
       corBotao: Colors.green.shade200,
       imagem: 'https://grupofemina.com/wp-content/uploads/2022/01/02-241x300.png',
@@ -236,7 +322,7 @@
       equacao: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."',
     ),
     Conteudo(
-      questao: questao1,
+      questao: listaQuestoesBiologia,
       corConteudo: Colors.green.shade100,
       corBotao: Colors.green.shade200,
       imagem: 'https://cdn.pixabay.com/photo/2020/07/02/18/42/fetus-5363907_960_720.png',
@@ -246,7 +332,7 @@
       equacao: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."',
     ),
     Conteudo(
-      questao: questao1,
+      questao: listaQuestoesBiologia,
       corConteudo: Colors.green.shade100,
       corBotao: Colors.green.shade200,
       imagem: 'https://cdn-icons-png.flaticon.com/512/6166/6166874.png',
@@ -256,7 +342,7 @@
       equacao: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."',
     ),
     Conteudo(
-      questao: questao1,
+      questao: listaQuestoesBiologia,
       corConteudo: Colors.green.shade100,
       corBotao: Colors.green.shade200,
       imagem: 'https://play-lh.googleusercontent.com/h9lqZpq5QwJaWtvg0YAoRomL3czookBezy4UOaBdYDdt_bMrA-P9t1soqJIkWDe67M0',
@@ -266,7 +352,7 @@
       equacao: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."',
     ),
     Conteudo(
-      questao: questao1,
+      questao: listaQuestoesBiologia,
       corConteudo: Colors.green.shade100,
       corBotao: Colors.green.shade200,
       imagem: 'https://www.cursou.com.br/wp-content/uploads/2017/08/curso-de-Fisiologia-Humana.png',
@@ -276,7 +362,7 @@
       equacao: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."',
     ),
     Conteudo(
-      questao: questao1,
+      questao: listaQuestoesBiologia,
       corConteudo: Colors.green.shade100,
       corBotao: Colors.green.shade200,
       imagem: 'https://fleminggenetica.com.br/wp-content/uploads/2019/03/icon-exames.png',
@@ -286,7 +372,7 @@
       equacao: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."',
     ),
     Conteudo(
-      questao: questao1,
+      questao: listaQuestoesBiologia,
       corConteudo: Colors.green.shade100,
       corBotao: Colors.green.shade200,
       imagem: 'https://i.ibb.co/37YGrGC/1655762850490.png',
@@ -296,7 +382,7 @@
       equacao: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."',
     ),
     Conteudo(
-      questao: questao1,
+      questao: listaQuestoesBiologia,
       corConteudo: Colors.green.shade100,
       corBotao: Colors.green.shade200,
       imagem: 'https://i.ibb.co/ydMB6yL/1655762519638.png',
@@ -306,7 +392,7 @@
       equacao: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."',
     ),
     Conteudo(
-      questao: questao1,
+      questao: listaQuestoesBiologia,
       corConteudo: Colors.green.shade100,
       corBotao: Colors.green.shade200,
       imagem: 'https://i.ibb.co/4M7BbCL/1655762438016.png',
@@ -316,19 +402,6 @@
       equacao: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."',
     ),
   ];
-
-  // static List<Conteudo> getListaFisica(){
-  //   return listaFisica;
-  // }
-
-  // static List<Conteudo> getListaBiologia(){
-  //   return listaBiologia;
-  // }
-
-  // static List<Conteudo> getListaQuimica(){
-  //   return listaQuimica;
-  // }
-
 
   static Future<List<Conteudo>> getListaFisica() async {
     print("ANTES");
@@ -350,3 +423,4 @@
     print("DEPOIS");
     return listaBiologia;
   }
+}

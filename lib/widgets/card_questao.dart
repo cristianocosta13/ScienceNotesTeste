@@ -3,9 +3,13 @@ import 'package:sciencenotes/domain/conteudo.dart';
 
 class CardQuestao extends StatefulWidget {
   final Conteudo conteudo;
+  final int indice;
+
   const CardQuestao({
     Key? key,
     required this.conteudo,
+    required this.indice,
+
   }) : super(key: key);
 
   @override
@@ -18,7 +22,7 @@ class _CardQuestaoState extends State<CardQuestao> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(8.0),
+      padding: const EdgeInsets.all(2.0),
       child: Card(
         child: Padding(
           padding: const EdgeInsets.all(8.0),
@@ -31,75 +35,89 @@ class _CardQuestaoState extends State<CardQuestao> {
                 ),
                 textAlign: TextAlign.justify,
               ),
-              Text(widget.conteudo.questao.pergunta),
-              //Text('Os organismos vivos são constituídos de várias '
-                  //'macromoléculas orgânicas, conhecidas como polímeros '
-                  //'biológicos. Sobre essas macromoléculas, é incorreto afirmar:'
-              //),
-              Radio(
-                value: 1,
-                groupValue: selectedValue,
-                onChanged: (value){
-                  setState((){
-                    selectedValue = 2;
-                  });
-                },
+              const SizedBox(height: 4,),
+              Text(widget.conteudo.questao[widget.indice].pergunta,
+              textAlign: TextAlign.justify,),
+              const SizedBox(height: 4,),
+              Row(
+                children: [
+                  Radio(
+                        value: 1,
+                        groupValue: selectedValue,
+                        onChanged: (value){
+                          setState((){
+                            selectedValue = 2;
+                          });
+                        },
+                      ),
+                  const SizedBox(width: 8,),
+                  Expanded(child: Text(widget.conteudo.questao[widget.indice].alt1)),
+                ],
               ),
-              const SizedBox(width: 8,),
-              Text(widget.conteudo.questao.alt1), 
-              //Text('Ácidos nucléicos são polímeros de monossacarídeos unidos por ligações glicosídicas, com funções estruturais.'),
-              const SizedBox(height: 8,),
-              Radio(
-                value: 2,
-                groupValue: selectedValue,
-                onChanged: (value){
-                  setState((){
-                    selectedValue = 2;
-                  });
-                },
+              const SizedBox(height: 4,),
+              Row(
+                children: [
+                  Radio(
+                    value: 2,
+                    groupValue: selectedValue,
+                    onChanged: (value){
+                      setState((){
+                        selectedValue = 2;
+                      });
+                    },
+                  ),
+                  const SizedBox(width: 8,),
+                  Expanded(child: Text(widget.conteudo.questao[widget.indice].alt2)),
+                ],
               ),
-              const SizedBox(width: 8,),
-              Text(widget.conteudo.questao.alt2), 
-              //Text('Os lipídeos são compostos formados por ácidos graxos, que podem constituir membranas celulares e exercer papéis importantes como hormônios.'),
-              const SizedBox(height: 8,),
-              Radio(
-                value: 3,
-                groupValue: selectedValue,
-                onChanged: (value){
-                  setState((){
-                    selectedValue = 3;
-                  });
-                },
+              const SizedBox(height: 4,),
+              Row(
+                children: [
+                  Radio(
+                    value: 3,
+                    groupValue: selectedValue,
+                    onChanged: (value){
+                      setState((){
+                        selectedValue = 3;
+                      });
+                    },
+                  ),
+                  const SizedBox(width: 8,),
+                  Expanded(child: Text(widget.conteudo.questao[widget.indice].alt3)),
+                ],
               ),
-              const SizedBox(width: 8,),
-              Text(widget.conteudo.questao.alt3), 
-              //Text('Proteínas são polímeros de aminoácidos unidos por ligações peptídicas e que podem exercer funções enzimáticas, estruturais e energéticas.'),
-              const SizedBox(height: 8,),
-              Radio(
-                value: 4,
-                groupValue: selectedValue,
-                onChanged: (value){
-                  setState((){
-                    selectedValue = 4;
-                  });
-                },
+              const SizedBox(height: 4,),
+              Row(
+                children: [
+                  Radio(
+                    value: 4,
+                    groupValue: selectedValue,
+                    onChanged: (value){
+                      setState((){
+                        selectedValue = 4;
+                      });
+                    },
+                  ),
+                  const SizedBox(width: 8,),
+                  Expanded(child: Text(widget.conteudo.questao[widget.indice].alt4)),
+                ],
               ),
-              const SizedBox(width: 8,),
-              Text(widget.conteudo.questao.alt4), 
-              //Text('Carboidratos são conhecidos como açúcares, constituídos por carbono, hidrogênio e oxigênio, sendo as principais fontes de energia da célula.'),
-              const SizedBox(height: 8,),
-              Radio(
-                value: 5,
-                groupValue: selectedValue,
-                onChanged: (value){
-                  setState((){
-                    selectedValue = 5;
-                  });
-                },
+              const SizedBox(height: 4,),
+              Row(
+                children: [
+                  Radio(
+                    value: 5,
+                    groupValue: selectedValue,
+                    onChanged: (value){
+                      setState((){
+                        selectedValue = 5;
+                      });
+                    },
+                  ),
+                  const SizedBox(width: 8,),
+                  Expanded(child: Text(widget.conteudo.questao[widget.indice].alt5)),
+                ],
               ),
-              const SizedBox(width: 8,),
-              Text(widget.conteudo.questao.alt5), 
-              //Text('Alguns tipos de polissacarídeos podem ser encontrados na estrutura da parede celular dos vegetais e também ser estocados como reservas energéticas em vegetais.'),
             ],
           ),
         ),

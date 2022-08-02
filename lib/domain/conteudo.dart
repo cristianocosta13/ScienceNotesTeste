@@ -8,7 +8,7 @@ class Conteudo {
   final String equacao;
   final Color corBotao;
   final Color corConteudo;
-  final Questao questao; 
+  final List<Questao> questao;
 
   Conteudo({
     required this.imagem,

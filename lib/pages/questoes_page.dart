@@ -23,12 +23,12 @@ class _QuestoesState extends State<Questoes> {
     return Container(
       child: ListView(
         children: [
-          CardQuestao(conteudo: widget.conteudo),
-          const SizedBox(height: 16,),
-          CardQuestao(conteudo: widget.conteudo),
-          const SizedBox(height: 16,),
-          CardQuestao(conteudo: widget.conteudo),
-          const SizedBox(height: 16,),
+          CardQuestao(conteudo: widget.conteudo, indice: 0,),
+          const SizedBox(height: 2,),
+          CardQuestao(conteudo: widget.conteudo, indice: 1,),
+          const SizedBox(height: 2,),
+          CardQuestao(conteudo: widget.conteudo, indice: 2,),
+          const SizedBox(height: 2,),
         ],
       ),
     );
