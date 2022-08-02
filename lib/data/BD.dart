@@ -1,9 +1,4 @@
 
-import 'package:flutter/material.dart';
-import 'package:sciencenotes/domain/conteudo.dart';
-import 'package:sciencenotes/domain/questao.dart';
-
-class BD{
   static Questao questao1 = Questao(
     pergunta: 'As raízes desempenham importantes funções para a sobrevivência da planta e ocupam um espaço muito maior que a parte aérea da planta. Com relação ao sistema radicular, sabe-se que',
     alt1: 'As eucotiledôneas possuem sistema radicular fasciculado ou em cabeleira.',
@@ -322,16 +317,36 @@ class BD{
     ),
   ];
 
-  static List<Conteudo> getListaFisica(){
+  // static List<Conteudo> getListaFisica(){
+  //   return listaFisica;
+  // }
+
+  // static List<Conteudo> getListaBiologia(){
+  //   return listaBiologia;
+  // }
+
+  // static List<Conteudo> getListaQuimica(){
+  //   return listaQuimica;
+  // }
+
+
+  static Future<List<Conteudo>> getListaFisica() async {
+    print("ANTES");
+    await Future.delayed(const Duration(seconds: 10));
+    print("DEPOIS");
     return listaFisica;
   }
 
-  static List<Conteudo> getListaBiologia(){
-    return listaBiologia;
-  }
-
-  static List<Conteudo> getListaQuimica(){
+  static Future<List<Conteudo>> getListaQuimica() async {
+    print("ANTES");
+    await Future.delayed(const Duration(seconds: 10));
+    print("DEPOIS");
     return listaQuimica;
   }
 
-}
+  static Future<List<Conteudo>> getListaBiologia() async {
+    print("ANTES");
+    await Future.delayed(const Duration(seconds: 10));
+    print("DEPOIS");
+    return listaBiologia;
+  }
