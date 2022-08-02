@@ -1,17 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:sciencenotes/widgets/card_conteudo.dart';
-import 'package:sciencenotes/domain/conteudo.dart';
-import 'package:sciencenotes/domain/questao.dart';
-import 'package:sciencenotes/widgets/lista_conteudo.dart';
-
-class BiologiaPage extends StatefulWidget {
-  const BiologiaPage({Key? key}) : super(key: key);
-
-  @override
-  State<BiologiaPage> createState() => _BiologiaPageState();
-}
-
-class _BiologiaPageState extends State<BiologiaPage> {
+  Future<List<Conteudo>> lista = BD.getListaBiologia();
 
   @override
   Widget build(BuildContext context) {
@@ -24,15 +11,41 @@ class _BiologiaPageState extends State<BiologiaPage> {
           style: TextStyle(fontSize: 24,color: Colors.white,  fontFamily: 'Staatliches'),
         ),
       ),
-      backgroundColor: Color(0xFF9DCC9B),
-      body: Container(
-        child: ListaConteudo(
-          conteudo1: conteudoB1, conteudo2: conteudoB2, conteudo3: conteudoB3,
-          conteudo4: conteudoB4, conteudo5: conteudoB5, conteudo6: conteudoB6,
-          conteudo7: conteudoB7, conteudo8: conteudoB8, conteudo9: conteudoB9,
-          conteudo10: conteudoB10,
+      backgroundColor: Colors.green.shade50,
+      body: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: Container(
+          child: ListView(
+            children: [
+              buildListView(),
+            ],
+          ),
         ),
       ),
     );
   }
-}
+
+  buildListView() {
+    return FutureBuilder<List<Conteudo>>(
+      future: lista,
+      builder: (context, snapshot) {
+
+        if(snapshot.hasData) {
+          // ?? -> Verificar ser o conteudo de snapshot.data é nulo
+          List<Conteudo> lista = snapshot.data ?? [];
+
+          return ListView.builder(
+            shrinkWrap: true,
+            physics: const NeverScrollableScrollPhysics(),
+            itemCount: lista.length,
+            itemBuilder: (BuildContext context, int index) {
+              return CardConteudo(conteudo: lista[index]);
+            },
+          );
+        }
+
+        return Center(child: const CircularProgressIndicator());
+
+      },
+    );
+  }
