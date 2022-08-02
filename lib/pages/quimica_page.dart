@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:sciencenotes/data/BD.dart';
 import 'package:sciencenotes/widgets/card_conteudo.dart';
 import 'package:sciencenotes/domain/conteudo.dart';
 import 'package:sciencenotes/domain/questao.dart';
@@ -14,6 +15,8 @@ class QuimicaPage extends StatefulWidget {
 
 class _QuimicaPageState extends State<QuimicaPage> {
 
+  Future<List<Conteudo>> lista = BD.getListaQuimica();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -26,15 +29,42 @@ class _QuimicaPageState extends State<QuimicaPage> {
         ),
       ),
       backgroundColor: Colors.deepPurple.shade50,
-      body: Container(
-        color: Colors.deepPurple.shade50,
-        child: ListaConteudo(
-          conteudo1: conteudoQ1, conteudo2: conteudoQ2, conteudo3: conteudoQ3,
-          conteudo4: conteudoQ4, conteudo5: conteudoQ5, conteudo6: conteudoQ6,
-          conteudo7: conteudoQ7, conteudo8: conteudoQ8, conteudo9: conteudoQ9,
-          conteudo10: conteudoQ10,
+      body: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: Container(
+          color: Colors.deepPurple.shade50,
+          child: ListView(
+            children: [
+              buildListView(),
+            ],
+          ),
         ),
       ),
+    );
+  }
+
+  buildListView() {
+    return FutureBuilder<List<Conteudo>>(
+      future: lista,
+      builder: (context, snapshot) {
+
+        if(snapshot.hasData) {
+          // ?? -> Verificar ser o conteudo de snapshot.data é nulo
+          List<Conteudo> lista = snapshot.data ?? [];
+
+          return ListView.builder(
+            shrinkWrap: true,
+            physics: const NeverScrollableScrollPhysics(),
+            itemCount: lista.length,
+            itemBuilder: (BuildContext context, int index) {
+              return CardConteudo(conteudo: lista[index]);
+            },
+          );
+        }
+
+        return Center(child: const CircularProgressIndicator());
+
+      },
     );
   }
 }
