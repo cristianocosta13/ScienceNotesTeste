@@ -1,3 +1,19 @@
+  import 'package:flutter/material.dart';
+import 'package:sciencenotes/data/BD.dart';
+import 'package:sciencenotes/widgets/card_conteudo.dart';
+import 'package:sciencenotes/domain/conteudo.dart';
+import 'package:sciencenotes/domain/questao.dart';
+import 'package:sciencenotes/widgets/lista_conteudo.dart';
+
+class BiologiaPage extends StatefulWidget {
+  const BiologiaPage({Key? key}) : super(key: key);
+
+  @override
+  State<BiologiaPage> createState() => _BiologiaPageState();
+}
+
+class _BiologiaPageState extends State<BiologiaPage> {
+
   Future<List<Conteudo>> lista = BD.getListaBiologia();
 
   @override
@@ -49,3 +65,5 @@
       },
     );
   }
+
+}
