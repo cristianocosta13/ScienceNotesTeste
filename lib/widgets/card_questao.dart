@@ -24,13 +24,14 @@ class _CardQuestaoState extends State<CardQuestao> {
     return Padding(
       padding: const EdgeInsets.all(2.0),
       child: Card(
+        color: widget.conteudo.questao[widget.indice].corQuestao,
         child: Padding(
           padding: const EdgeInsets.all(8.0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text('Exercício 1: (UDESC 2008) ',
-                style: TextStyle(
+                Text(widget.conteudo.questao[widget.indice].banca,
+                style: const TextStyle(
                   fontWeight: FontWeight.bold,
                 ),
                 textAlign: TextAlign.justify,

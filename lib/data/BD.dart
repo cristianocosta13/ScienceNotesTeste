@@ -6,6 +6,8 @@ import 'package:sciencenotes/domain/questao.dart';
 class BD{
   static List<Questao> listaQuestoesFisica = [
     Questao(
+      corQuestao: Colors.blue.shade50,
+      banca: 'Exercício 1: (UDESC 2008) ',
       pergunta: 'As raízes desempenham importantes funções para a sobrevivência da planta e ocupam um espaço muito maior que a parte aérea da planta. Com relação ao sistema radicular, sabe-se que',
       alt1: 'As eucotiledôneas possuem sistema radicular fasciculado ou em cabeleira.',
       alt2: 'As funções primordiais das raízes são a fotossíntese e o armazenamento de matéria orgânica.',
@@ -14,6 +16,8 @@ class BD{
       alt5: 'As pluricotiledôneas não possuem sistema radicular.',
     ),
     Questao(
+      corQuestao: Colors.blue.shade50,
+      banca: 'Exercício 1: (UDESC 2008) ',
       pergunta: 'As raízes desempenham importantes funções para a sobrevivência da planta e ocupam um espaço muito maior que a parte aérea da planta. Com relação ao sistema radicular, sabe-se que',
       alt1: 'As eucotiledôneas possuem sistema radicular fasciculado ou em cabeleira.',
       alt2: 'As funções primordiais das raízes são a fotossíntese e o armazenamento de matéria orgânica.',
@@ -22,6 +26,8 @@ class BD{
       alt5: 'As pluricotiledôneas não possuem sistema radicular.',
     ),
     Questao(
+      corQuestao: Colors.blue.shade50,
+      banca: 'Exercício 1: (UDESC 2008) ',
       pergunta: 'As raízes desempenham importantes funções para a sobrevivência da planta e ocupam um espaço muito maior que a parte aérea da planta. Com relação ao sistema radicular, sabe-se que',
       alt1: 'As eucotiledôneas possuem sistema radicular fasciculado ou em cabeleira.',
       alt2: 'As funções primordiais das raízes são a fotossíntese e o armazenamento de matéria orgânica.',
@@ -33,6 +39,8 @@ class BD{
 
   static List<Questao> listaQuestoesQuimica = [
     Questao(
+      corQuestao: Colors.purple.shade50,
+      banca: 'Exercício 1: (UDESC 2008) ',
       pergunta: 'As raízes desempenham importantes funções para a sobrevivência da planta e ocupam um espaço muito maior que a parte aérea da planta. Com relação ao sistema radicular, sabe-se que',
       alt1: 'As eucotiledôneas possuem sistema radicular fasciculado ou em cabeleira.',
       alt2: 'As funções primordiais das raízes são a fotossíntese e o armazenamento de matéria orgânica.',
@@ -41,6 +49,8 @@ class BD{
       alt5: 'As pluricotiledôneas não possuem sistema radicular.',
     ),
     Questao(
+      corQuestao: Colors.purple.shade50,
+      banca: 'Exercício 1: (UDESC 2008) ',
       pergunta: 'As raízes desempenham importantes funções para a sobrevivência da planta e ocupam um espaço muito maior que a parte aérea da planta. Com relação ao sistema radicular, sabe-se que',
       alt1: 'As eucotiledôneas possuem sistema radicular fasciculado ou em cabeleira.',
       alt2: 'As funções primordiais das raízes são a fotossíntese e o armazenamento de matéria orgânica.',
@@ -49,6 +59,8 @@ class BD{
       alt5: 'As pluricotiledôneas não possuem sistema radicular.',
     ),
     Questao(
+      corQuestao: Colors.purple.shade50,
+      banca: 'Exercício 1: (UDESC 2008) ',
       pergunta: 'As raízes desempenham importantes funções para a sobrevivência da planta e ocupam um espaço muito maior que a parte aérea da planta. Com relação ao sistema radicular, sabe-se que',
       alt1: 'As eucotiledôneas possuem sistema radicular fasciculado ou em cabeleira.',
       alt2: 'As funções primordiais das raízes são a fotossíntese e o armazenamento de matéria orgânica.',
@@ -60,6 +72,8 @@ class BD{
 
   static List<Questao> listaQuestoesBiologia = [
     Questao(
+      corQuestao: Colors.green.shade50,
+      banca: 'Exercício 1: (UDESC 2008) ',
       pergunta: 'As raízes desempenham importantes funções para a sobrevivência da planta e ocupam um espaço muito maior que a parte aérea da planta. Com relação ao sistema radicular, sabe-se que',
       alt1: 'As eucotiledôneas possuem sistema radicular fasciculado ou em cabeleira.',
       alt2: 'As funções primordiais das raízes são a fotossíntese e o armazenamento de matéria orgânica.',
@@ -68,6 +82,8 @@ class BD{
       alt5: 'As pluricotiledôneas não possuem sistema radicular.',
     ),
     Questao(
+      corQuestao: Colors.green.shade50,
+      banca: 'Exercício 1: (UDESC 2008) ',
       pergunta: 'As raízes desempenham importantes funções para a sobrevivência da planta e ocupam um espaço muito maior que a parte aérea da planta. Com relação ao sistema radicular, sabe-se que',
       alt1: 'As eucotiledôneas possuem sistema radicular fasciculado ou em cabeleira.',
       alt2: 'As funções primordiais das raízes são a fotossíntese e o armazenamento de matéria orgânica.',
@@ -76,6 +92,8 @@ class BD{
       alt5: 'As pluricotiledôneas não possuem sistema radicular.',
     ),
     Questao(
+      corQuestao: Colors.green.shade50,
+      banca: 'Exercício 1: (UDESC 2008) ',
       pergunta: 'As raízes desempenham importantes funções para a sobrevivência da planta e ocupam um espaço muito maior que a parte aérea da planta. Com relação ao sistema radicular, sabe-se que',
       alt1: 'As eucotiledôneas possuem sistema radicular fasciculado ou em cabeleira.',
       alt2: 'As funções primordiais das raízes são a fotossíntese e o armazenamento de matéria orgânica.',
@@ -84,15 +102,6 @@ class BD{
       alt5: 'As pluricotiledôneas não possuem sistema radicular.',
     ),
   ];
-
-  static Questao questao1 = Questao(
-    pergunta: 'As raízes desempenham importantes funções para a sobrevivência da planta e ocupam um espaço muito maior que a parte aérea da planta. Com relação ao sistema radicular, sabe-se que',
-    alt1: 'As eucotiledôneas possuem sistema radicular fasciculado ou em cabeleira.',
-    alt2: 'As funções primordiais das raízes são a fotossíntese e o armazenamento de matéria orgânica.',
-    alt3: 'O ápice da raiz é recoberto pela coifa, uma massa de células parenquimáticas vivas que revestem e protegem o ápice.',
-    alt4: 'As monocotiledôneas possuem sistema radicular pivotante.',
-    alt5: 'As pluricotiledôneas não possuem sistema radicular.',
-  );
 
   static List<Conteudo> listaFisica = [
     Conteudo(
@@ -404,23 +413,23 @@ class BD{
   ];
 
   static Future<List<Conteudo>> getListaFisica() async {
-    print("ANTES");
+    print('object');
     await Future.delayed(const Duration(seconds: 10));
-    print("DEPOIS");
+    print('object');
     return listaFisica;
   }
 
   static Future<List<Conteudo>> getListaQuimica() async {
-    print("ANTES");
+    print('object');
     await Future.delayed(const Duration(seconds: 10));
-    print("DEPOIS");
+    print('object');
     return listaQuimica;
   }
 
   static Future<List<Conteudo>> getListaBiologia() async {
-    print("ANTES");
+    print('object');
     await Future.delayed(const Duration(seconds: 10));
-    print("DEPOIS");
+    print('object');
     return listaBiologia;
   }
 }
