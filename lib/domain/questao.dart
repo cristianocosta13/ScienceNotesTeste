@@ -9,8 +9,7 @@ class Questao {
   final String alt4;
   final String alt5;
   final Color corQuestao;
-  //final Color corBotao;
-  //final Color corConteudo;
+  final int alternativaCerta;
 
 
   Questao({
@@ -22,6 +21,6 @@ class Questao {
     required this.alt4, 
     required this.alt5,
     required this.corQuestao,
-    //required this.corConteudo,
+    required this.alternativaCerta,
   });
 }

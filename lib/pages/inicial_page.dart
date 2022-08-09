@@ -21,31 +21,32 @@ class _InicialPageState extends State<InicialPage> {
           style: TextStyle(fontSize: 24, color: Colors.white, fontFamily: 'Staatliches'),
         ),
       ),
-      drawer: Drawer(
-        backgroundColor: Colors.deepPurple.shade50,
-        child: Column(
-          children: const [
-            ListTile(
-              leading: Icon(CupertinoIcons.lab_flask_solid, color: Colors.deepPurple,),
-              title: Text('SCIENCE NOTES'),
-              subtitle: Text('Um app destinado ao estudo das ciências da natureza'),
-              //onTap: (),
-            ),
-            ListTile(
-              leading: Icon(CupertinoIcons.person_alt_circle, color: Colors.deepPurple),
-              title: Text('Login'),
-              subtitle: Text('Entre em nosso app e usufrua dos nossos recursos.'),
-              //onTap: (),
-            ),
-            ListTile(
-              leading: Icon(Icons.app_registration_sharp, color: Colors.deepPurple),
-              title: Text('Cadastrar'),
-              subtitle: Text('Realize seu cadastro em nosso app.'),
-              //onTap: (),
-            ),
-          ],
-        ),
-      ),
+      //drawer
+      // drawer: Drawer(
+      //   backgroundColor: Colors.deepPurple.shade50,
+      //   child: Column(
+      //     children: const [
+      //       ListTile(
+      //         leading: Icon(CupertinoIcons.lab_flask_solid, color: Colors.deepPurple,),
+      //         title: Text('SCIENCE NOTES'),
+      //         subtitle: Text('Um app destinado ao estudo das ciências da natureza'),
+      //         //onTap: (),
+      //       ),
+      //       ListTile(
+      //         leading: Icon(CupertinoIcons.person_alt_circle, color: Colors.deepPurple),
+      //         title: Text('Login'),
+      //         subtitle: Text('Entre em nosso app e usufrua dos nossos recursos.'),
+      //         //onTap: (),
+      //       ),
+      //       ListTile(
+      //         leading: Icon(Icons.app_registration_sharp, color: Colors.deepPurple),
+      //         title: Text('Cadastrar'),
+      //         subtitle: Text('Realize seu cadastro em nosso app.'),
+      //         //onTap: (),
+      //       ),
+      //     ],
+      //   ),
+      // ),
       backgroundColor: const Color(0xFFDFE9F5),
       body: Center(
         child: Padding(

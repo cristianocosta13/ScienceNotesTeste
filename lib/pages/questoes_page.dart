@@ -33,13 +33,18 @@ class _QuestoesState extends State<Questoes> {
           const SizedBox(height: 2,),
         ],
       ),
-      // child: CarouselSlider.builder(
-      //   itemCount: 3,
-      //   itemBuilder: (BuildContext context, int itemIndex, int pageViewIndex) =>
-      //       Container(
-      //         child: Text(itemIndex.toString()),
-      //       ),
-      // ),
+
+       // child: Center(
+       //   child: CarouselSlider(
+       //     options: CarouselOptions(height: 400.0), //quando for horizontal, a gente que define a altura
+       //       items: [
+       //         CardQuestao(conteudo: widget.conteudo, indice: 0,),
+       //         CardQuestao(conteudo: widget.conteudo, indice: 1,),
+       //         CardQuestao(conteudo: widget.conteudo, indice: 2,),
+       //       ],
+       //   ),
+       // ),
+
     );
   }
 

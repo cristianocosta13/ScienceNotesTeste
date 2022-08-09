@@ -14,6 +14,7 @@ class BD{
       alt3: 'O ápice da raiz é recoberto pela coifa, uma massa de células parenquimáticas vivas que revestem e protegem o ápice.',
       alt4: 'As monocotiledôneas possuem sistema radicular pivotante.',
       alt5: 'As pluricotiledôneas não possuem sistema radicular.',
+      alternativaCerta: 3,
     ),
     Questao(
       corQuestao: Colors.blue.shade50,
@@ -24,6 +25,7 @@ class BD{
       alt3: 'O ápice da raiz é recoberto pela coifa, uma massa de células parenquimáticas vivas que revestem e protegem o ápice.',
       alt4: 'As monocotiledôneas possuem sistema radicular pivotante.',
       alt5: 'As pluricotiledôneas não possuem sistema radicular.',
+      alternativaCerta: 3,
     ),
     Questao(
       corQuestao: Colors.blue.shade50,
@@ -34,6 +36,7 @@ class BD{
       alt3: 'O ápice da raiz é recoberto pela coifa, uma massa de células parenquimáticas vivas que revestem e protegem o ápice.',
       alt4: 'As monocotiledôneas possuem sistema radicular pivotante.',
       alt5: 'As pluricotiledôneas não possuem sistema radicular.',
+      alternativaCerta: 3,
     ),
   ];
 
@@ -47,6 +50,7 @@ class BD{
       alt3: 'O ápice da raiz é recoberto pela coifa, uma massa de células parenquimáticas vivas que revestem e protegem o ápice.',
       alt4: 'As monocotiledôneas possuem sistema radicular pivotante.',
       alt5: 'As pluricotiledôneas não possuem sistema radicular.',
+      alternativaCerta: 3,
     ),
     Questao(
       corQuestao: Colors.purple.shade50,
@@ -57,6 +61,7 @@ class BD{
       alt3: 'O ápice da raiz é recoberto pela coifa, uma massa de células parenquimáticas vivas que revestem e protegem o ápice.',
       alt4: 'As monocotiledôneas possuem sistema radicular pivotante.',
       alt5: 'As pluricotiledôneas não possuem sistema radicular.',
+      alternativaCerta: 3,
     ),
     Questao(
       corQuestao: Colors.purple.shade50,
@@ -67,6 +72,7 @@ class BD{
       alt3: 'O ápice da raiz é recoberto pela coifa, uma massa de células parenquimáticas vivas que revestem e protegem o ápice.',
       alt4: 'As monocotiledôneas possuem sistema radicular pivotante.',
       alt5: 'As pluricotiledôneas não possuem sistema radicular.',
+      alternativaCerta: 3,
     ),
   ];
 
@@ -80,6 +86,7 @@ class BD{
       alt3: 'O ápice da raiz é recoberto pela coifa, uma massa de células parenquimáticas vivas que revestem e protegem o ápice.',
       alt4: 'As monocotiledôneas possuem sistema radicular pivotante.',
       alt5: 'As pluricotiledôneas não possuem sistema radicular.',
+      alternativaCerta: 3,
     ),
     Questao(
       corQuestao: Colors.green.shade50,
@@ -90,6 +97,7 @@ class BD{
       alt3: 'O ápice da raiz é recoberto pela coifa, uma massa de células parenquimáticas vivas que revestem e protegem o ápice.',
       alt4: 'As monocotiledôneas possuem sistema radicular pivotante.',
       alt5: 'As pluricotiledôneas não possuem sistema radicular.',
+      alternativaCerta: 3,
     ),
     Questao(
       corQuestao: Colors.green.shade50,
@@ -100,6 +108,7 @@ class BD{
       alt3: 'O ápice da raiz é recoberto pela coifa, uma massa de células parenquimáticas vivas que revestem e protegem o ápice.',
       alt4: 'As monocotiledôneas possuem sistema radicular pivotante.',
       alt5: 'As pluricotiledôneas não possuem sistema radicular.',
+      alternativaCerta: 3,
     ),
   ];
 
