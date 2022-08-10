@@ -1,5 +1,3 @@
-
-
 import 'package:flutter/material.dart';
 import 'package:sciencenotes/domain/conteudo.dart';
 
@@ -11,7 +9,6 @@ class CardQuestao extends StatefulWidget {
     Key? key,
     required this.conteudo,
     required this.indice,
-
   }) : super(key: key);
 
   @override
@@ -19,8 +16,10 @@ class CardQuestao extends StatefulWidget {
 }
 
 class _CardQuestaoState extends State<CardQuestao> {
-  int selectedValue = 1;
-  Color corAlternativa = Colors.green.shade50;
+  int selectedValue = 0;
+  Color corAltCerta = Colors.transparent;
+  Color corAltErrada = Colors.transparent;
+  bool isReply = false;
 
   @override
   Widget build(BuildContext context) {
@@ -33,176 +32,54 @@ class _CardQuestaoState extends State<CardQuestao> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(widget.conteudo.questao[widget.indice].banca,
-                style: const TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 18,
-                  color: Colors.black,
-                  fontFamily: 'Abel-Regular',
-                ),
-                textAlign: TextAlign.justify,
+              buildText(
+                  text: widget.conteudo.questao[widget.indice].banca,
+                  isBold: true),
+              const SizedBox(
+                height: 4,
               ),
-              const SizedBox(height: 4,),
-              Text(
-                widget.conteudo.questao[widget.indice].pergunta,
-                style: const TextStyle(
-                  fontSize: 18,
-                  color: Colors.black,
-                  fontFamily: 'Abel-Regular',
-                ),
-                textAlign: TextAlign.justify,
+              buildText(text: widget.conteudo.questao[widget.indice].pergunta),
+              const SizedBox(
+                height: 4,
               ),
-              const SizedBox(height: 4,),
-              Container(
-                color: corAlternativa,
-                child: Row(
-                  children: [
-                    Radio(
-                      activeColor: widget.conteudo.corBotao,
-                      value: 1,
-                      groupValue: selectedValue,
-                      onChanged: (value){
-                        setState((){
-                          selectedValue = 1;
-                        });
-                        },
-                    ),
-                    const SizedBox(width: 8,),
-                    Expanded(
-                      child: Text(
-                        widget.conteudo.questao[widget.indice].alt1,
-                        style: const TextStyle(
-                          fontSize: 18,
-                          color: Colors.black,
-                          fontFamily: 'Abel-Regular',
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
+              buildContainerQuestao(
+                  alternativa: widget.conteudo.questao[widget.indice].alt1,
+                  indice: 1),
+              const SizedBox(
+                height: 4,
               ),
-              const SizedBox(height: 4,),
-              Container(
-                color: corAlternativa,
-                child: Row(
-                  children: [
-                    Radio(
-                      activeColor: widget.conteudo.corBotao,
-                      value: 2,
-                      groupValue: selectedValue,
-                      onChanged: (value){
-                        setState((){
-                          selectedValue = 2;
-                        });
-                      },
-                    ),
-                    const SizedBox(width: 8,),
-                    Expanded(
-                      child: Text(
-                        widget.conteudo.questao[widget.indice].alt2,
-                        style: const TextStyle(
-                          fontSize: 18,
-                          color: Colors.black,
-                          fontFamily: 'Abel-Regular',
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
+              buildContainerQuestao(
+                  alternativa: widget.conteudo.questao[widget.indice].alt2,
+                  indice: 2),
+              const SizedBox(
+                height: 4,
               ),
-              const SizedBox(height: 4,),
-              Container(
-                color: corAlternativa,
-                child: Row(
-                  children: [
-                    Radio(
-                      activeColor: widget.conteudo.corBotao,
-                      value: 3,
-                      groupValue: selectedValue,
-                      onChanged: (value){
-                        setState((){
-                          selectedValue = 3;
-                        });
-                      },
-                    ),
-                    const SizedBox(width: 8,),
-                    Expanded(
-                      child: Text(
-                        widget.conteudo.questao[widget.indice].alt3,
-                        style: const TextStyle(
-                          fontSize: 18,
-                          color: Colors.black,
-                          fontFamily: 'Abel-Regular',
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
+              buildContainerQuestao(
+                  alternativa: widget.conteudo.questao[widget.indice].alt3,
+                  indice: 3),
+              const SizedBox(
+                height: 4,
               ),
-              const SizedBox(height: 4,),
-              Container(
-                color: corAlternativa,
-                child: Row(
-                  children: [
-                    Radio(
-                      activeColor: widget.conteudo.corBotao,
-                      value: 4,
-                      groupValue: selectedValue,
-                      onChanged: (value){
-                        setState((){
-                          selectedValue = 4;
-                        });
-                      },
-                    ),
-                    const SizedBox(width: 8,),
-                    Expanded(
-                      child: Text(
-                        widget.conteudo.questao[widget.indice].alt4,
-                        style: const TextStyle(
-                          fontSize: 18,
-                          color: Colors.black,
-                          fontFamily: 'Abel-Regular',
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
+              buildContainerQuestao(
+                  alternativa: widget.conteudo.questao[widget.indice].alt4,
+                  indice: 4),
+              const SizedBox(
+                height: 4,
               ),
-              const SizedBox(height: 4,),
-              Container(
-                color: corAlternativa,
-                child: Row(
-                  children: [
-                    Radio(
-                      activeColor: widget.conteudo.corBotao,
-                      value: 5,
-                      groupValue: selectedValue,
-                      onChanged: (value){
-                        setState((){
-                          selectedValue = 5;
-                        });
-                      },
-                    ),
-                    const SizedBox(width: 8,),
-                    Expanded(
-                      child: Text(
-                        widget.conteudo.questao[widget.indice].alt5,
-                        style: const TextStyle(
-                          fontSize: 18,
-                          color: Colors.black,
-                          fontFamily: 'Abel-Regular',
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
+              buildContainerQuestao(
+                  alternativa: widget.conteudo.questao[widget.indice].alt5,
+                  indice: 5),
               Center(
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
                     primary: widget.conteudo.corBotao,
                   ),
-                  onPressed: verificarAlternativa,
+                  onPressed: () {
+                    setState((){
+                      verificarAlternativa();
+                      isReply = true;
+                    });
+                  },
                   child: const Text(
                     'Responder',
                     style: TextStyle(
@@ -220,14 +97,73 @@ class _CardQuestaoState extends State<CardQuestao> {
     );
   }
 
-  void verificarAlternativa() {
-    if(selectedValue == widget.conteudo.questao[widget.indice].alternativaCerta){
-      print('Você acertou!');
-      corAlternativa = Colors.green.shade100;
-    }else{
-      print('Você errou!');
-      corAlternativa = Colors.red.shade100;
-    }
+  Text buildText({
+    required String text,
+    bool isBold = false,
+  }) {
+    return Text(
+      text,
+      style: TextStyle(
+        fontWeight: isBold ? FontWeight.bold : null,
+        fontSize: 18,
+        color: Colors.black,
+        fontFamily: 'Abel-Regular',
+      ),
+      textAlign: TextAlign.justify,
+    );
   }
 
+  Container buildContainerQuestao({
+    required String alternativa,
+    required int indice,
+  })
+  {
+    return Container(
+      color: isReply==true && indice ==
+          widget.conteudo.questao[widget.indice].alternativaCerta ?
+          corAltCerta : Colors.transparent,
+      child: Row(
+        children: [
+          Radio(
+            activeColor: widget.conteudo.corBotao,
+            value: indice,
+            groupValue: selectedValue,
+            onChanged: (value) {
+              setState(() {
+                selectedValue = indice;
+                isReply = false;
+              });
+            },
+          ),
+          const SizedBox(
+            width: 8,
+          ),
+          Expanded(
+            child: Text(
+              alternativa,
+              style: TextStyle(
+                fontSize: 18,
+                color: isReply == true && selectedValue == indice && indice !=
+                    widget.conteudo.questao[widget.indice].alternativaCerta ?
+                    Colors.red : Colors.black,
+                fontFamily: 'Abel-Regular',
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  void verificarAlternativa() {
+    if (selectedValue ==
+        widget.conteudo.questao[widget.indice].alternativaCerta) {
+      print('Você acertou!');
+      corAltCerta = Colors.green.shade100;
+      //Colors.green.shade100;
+    } else {
+      print('Você errou!');
+      corAltErrada = Colors.red.shade100;
+    }
+  }
 }

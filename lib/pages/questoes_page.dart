@@ -3,7 +3,7 @@ import 'dart:ffi';
 import 'package:flutter/material.dart';
 import 'package:sciencenotes/domain/conteudo.dart';
 import 'package:sciencenotes/widgets/card_questao.dart';
-import 'package:carousel_slider/carousel_slider.dart';
+//import 'package:carousel_slider/carousel_slider.dart';
 
 class Questoes extends StatefulWidget {
   final Conteudo conteudo; 
