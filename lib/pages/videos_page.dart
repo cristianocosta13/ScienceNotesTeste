@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 
-class Videos extends StatefulWidget {
-  const Videos({Key? key}) : super(key: key);
+class VideosPage extends StatefulWidget {
+  const VideosPage({Key? key}) : super(key: key);
 
   @override
-  State<Videos> createState() => _VideosState();
+  State<VideosPage> createState() => _VideosPageState();
 }
 
-class _VideosState extends State<Videos> {
+class _VideosPageState extends State<VideosPage> {
   @override
   Widget build(BuildContext context) {
-    return Center(
+    return const Center(
       child: Text('PÁGINA INDISPONÍVEL'),
     );
   }
