@@ -1,5 +1,6 @@
 // import 'package:flutter/src/foundation/key.dart';
 // import 'package:flutter/src/widgets/framework.dart';
+import 'package:sciencenotes/pages/home_page.dart';
 import 'package:sciencenotes/pages/resume_page.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -81,7 +82,7 @@ class _SubjectPageState extends State<SubjectPage> {
       context,
       MaterialPageRoute(
         builder: (context) {
-          return const WelcomePage();
+          return const HomePage();
         },
       ),
     );

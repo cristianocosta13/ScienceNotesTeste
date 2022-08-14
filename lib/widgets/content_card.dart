@@ -16,6 +16,7 @@ class ContentCard extends StatefulWidget {
 
 class _ContentCardState extends State<ContentCard> {
   @override
+
   Widget build(BuildContext context) {
     return InkWell(
       child: Card(
@@ -60,7 +61,7 @@ class _ContentCardState extends State<ContentCard> {
                       SizedBox(
                         width: 200,
                         height: 200,
-                        child: Image.network(widget.content.image),
+                        child: Image.asset(widget.content.image),
                       ),
                       const SizedBox(height: 8.0,),
                       ElevatedButton(

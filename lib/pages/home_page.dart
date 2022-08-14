@@ -35,7 +35,7 @@ class HomePageState extends State<HomePage> {
               colorButton: Colors.blue.shade200,
               colorCard: Colors.blue.shade100,
               scienceName: 'Física',
-              scienceImage: 'https://i.ibb.co/5Ff9kVX/1655761311860.png',
+              scienceImage: 'lib/assets/images/fisica.png',
               directionPage: () {
                 Navigator.push(
                   context,
@@ -51,7 +51,7 @@ class HomePageState extends State<HomePage> {
               colorButton: Colors.deepPurple.shade200,
               colorCard: Colors.deepPurple.shade100,
               scienceName: 'Química',
-              scienceImage: 'https://i.ibb.co/mBhmBFy/1655761232564.png',
+              scienceImage: 'lib/assets/images/quimica.png',
               directionPage: () {
                 Navigator.push(
                   context,
@@ -67,7 +67,7 @@ class HomePageState extends State<HomePage> {
               colorButton: Colors.green.shade200,
               colorCard: Colors.green.shade100,
               scienceName: 'Biologia',
-              scienceImage: 'https://i.ibb.co/Yc1Q9dW/1655760878844.png',
+              scienceImage: 'lib/assets/images/biologia.png',
               directionPage: () {
                 Navigator.push(
                   context,

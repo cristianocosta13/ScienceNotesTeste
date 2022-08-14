@@ -26,6 +26,9 @@ class _QuestionCardState extends State<QuestionCard> {
     return Padding(
       padding: const EdgeInsets.all(4.0),
       child: Card(
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(4),
+        ),
         color: widget.content.question[widget.index].colorQuestion,
         child: Padding(
           padding: const EdgeInsets.all(8.0),
@@ -70,24 +73,42 @@ class _QuestionCardState extends State<QuestionCard> {
                   alternative: widget.content.question[widget.index].alt5,
                   index: 5),
               Center(
-                child: ElevatedButton(
-                  style: ElevatedButton.styleFrom(
-                    primary: widget.content.colorButton,
-                  ),
-                  onPressed: () {
-                    setState((){
-                      checkAlternative();
-                      isAnswer = true;
-                    });
-                  },
-                  child: const Text(
-                    'Responder',
-                    style: TextStyle(
-                      fontSize: 26,
-                      color: Colors.white,
-                      fontFamily: 'AmaticSC-Regular',
+                child: Column(
+                  children: [
+                    ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        primary: widget.content.colorButton,
+                      ),
+                      onPressed: () {
+                        setState((){
+                          checkAlternative();
+                          isAnswer = true;
+                        });
+                      },
+                      child: const Text(
+                        'Responder',
+                        style: TextStyle(
+                          fontSize: 26,
+                          color: Colors.white,
+                          fontFamily: 'AmaticSC-Regular',
+                        ),
+                      ),
                     ),
-                  ),
+                    const SizedBox(
+                      height: 4,
+                    ),
+                    Text(
+                      isAnswer == true && selectedValue !=
+                          widget.content.question[widget.index].alterCorrect ?
+                      'A resposta certa era a de opção '
+                          '${widget.content.question[widget.index].
+                      alterCorrect}!' : '',
+                      style: const TextStyle(
+                        color: Colors.green,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ],
                 ),
               ),
             ],

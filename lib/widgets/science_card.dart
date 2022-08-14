@@ -79,7 +79,7 @@ class _ScienceCardState extends State<ScienceCard> {
                       SizedBox(
                         width: 200,
                         height: 200,
-                        child: Image.network(widget.scienceImage),
+                        child: Image.asset(widget.scienceImage),
                       ),
                       const SizedBox(height: 8.0,),
                       ElevatedButton(

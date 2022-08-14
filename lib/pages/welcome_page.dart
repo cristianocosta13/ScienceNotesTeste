@@ -56,7 +56,7 @@ class _WelcomePageState extends State<WelcomePage> {
             children: [
               ClipRRect(
                 borderRadius: BorderRadius.circular(16),
-                child: Image.network("https://i.ibb.co/7jzg9CX/IMG-20220630-WA0044.jpg"),
+                child: Image.asset('lib/assets/images/logo.jpg'),
               ),
               const SizedBox(height: 40),
               ElevatedButton(
