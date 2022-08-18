@@ -7,7 +7,6 @@ import 'package:flutter/material.dart';
 import 'package:sciencenotes/pages/videos_page.dart';
 import 'package:sciencenotes/pages/questions_page.dart';
 import 'package:sciencenotes/pages/profile_page.dart';
-import 'package:sciencenotes/pages/welcome_page.dart';
 import 'package:sciencenotes/domain/content.dart';
 
 class SubjectPage extends StatefulWidget {
@@ -37,7 +36,7 @@ class _SubjectPageState extends State<SubjectPage> {
     return  Scaffold(
       appBar: AppBar(
         title: Text(
-          widget.content.title,
+          selectedIndex==3 ? 'Science Notes' : widget.content.title,
           style: const TextStyle(
               fontSize: 24, color: Colors.white,  fontFamily: 'Staatliches'),
         ),
@@ -47,8 +46,9 @@ class _SubjectPageState extends State<SubjectPage> {
             onPressed: onPressedButton,
           ),
         ],
-        backgroundColor: const Color(0xFFA7AED3),
+        backgroundColor: const Color.fromARGB(255, 45, 16, 51),
       ),
+      backgroundColor: const Color.fromARGB(255, 216, 194, 221),
       body: pages[selectedIndex],
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: selectedIndex,
@@ -78,13 +78,14 @@ class _SubjectPageState extends State<SubjectPage> {
   }
 
   void onPressedButton() {
-    Navigator.push(
+    Navigator.pushAndRemoveUntil(
       context,
       MaterialPageRoute(
         builder: (context) {
           return const HomePage();
         },
       ),
+          (Route<dynamic> route) => false,
     );
   }
 }

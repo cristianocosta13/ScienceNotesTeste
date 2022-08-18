@@ -20,20 +20,20 @@ class HomePageState extends State<HomePage> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: false,
-        backgroundColor: const Color(0xFFA7AED3),
+        backgroundColor: const Color.fromARGB(255, 45, 16, 51),
         title: const Text(
           'Sciences Notes',
           style: TextStyle(fontSize: 24, color: Colors.white,  fontFamily: 'Staatliches'),
         ),
       ),
-      backgroundColor: Colors.white,
+      backgroundColor: const Color.fromARGB(255, 216, 194, 221),
       body: Padding(
-        padding: const EdgeInsets.all(16.0),
+        padding: const EdgeInsets.all(8.0),
         child: ListView(
           children: [
             ScienceCard(
-              colorButton: Colors.blue.shade200,
-              colorCard: Colors.blue.shade100,
+              colorButton: Color(0xFFABC6E5),
+              colorCard: Color(0xFFABC6E5),
               scienceName: 'Física',
               scienceImage: 'lib/assets/images/fisica.png',
               directionPage: () {
@@ -48,8 +48,8 @@ class HomePageState extends State<HomePage> {
               },
             ),
             ScienceCard(
-              colorButton: Colors.deepPurple.shade200,
-              colorCard: Colors.deepPurple.shade100,
+              colorButton: Color(0xFFCCA9DD),
+              colorCard: Color(0xFFCCA9DD), //0xFFCCA9DD
               scienceName: 'Química',
               scienceImage: 'lib/assets/images/quimica.png',
               directionPage: () {
@@ -64,8 +64,8 @@ class HomePageState extends State<HomePage> {
               },
             ),
             ScienceCard(
-              colorButton: Colors.green.shade200,
-              colorCard: Colors.green.shade100,
+              colorButton: Color(0xFF8FB996),
+              colorCard: Color(0xFF8FB996),
               scienceName: 'Biologia',
               scienceImage: 'lib/assets/images/biologia.png',
               directionPage: () {

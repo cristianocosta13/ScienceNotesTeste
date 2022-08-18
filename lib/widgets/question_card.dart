@@ -159,7 +159,7 @@ class _QuestionCardState extends State<QuestionCard> {
           Radio(
             activeColor: isAnswer == true && selectedValue == index && index ==
                 widget.content.question[widget.index].alterCorrect ?
-            Colors.green : widget.content.colorButton,
+            Colors.green : Colors.blueGrey,
             value: index,
             groupValue: selectedValue,
             onChanged: (value) {
@@ -200,9 +200,9 @@ class _QuestionCardState extends State<QuestionCard> {
   void checkAlternative() {
     if (selectedValue ==
         widget.content.question[widget.index].alterCorrect) {
-      colorAltCorrect = Colors.green.shade100;
+      colorAltCorrect = Colors.green.shade600;
     } else {
-      colorAltIncorrect = Colors.red.shade100;
+      colorAltIncorrect = Color(0xffff6961);
     }
   }
 }

@@ -1,6 +1,6 @@
 
 import 'package:flutter/material.dart';
-import 'package:sciencenotes/data/DB.dart';
+import 'package:sciencenotes/data/DBcontent.dart';
 import 'package:sciencenotes/widgets/content_card.dart';
 import 'package:sciencenotes/domain/content.dart';
 
@@ -13,13 +13,13 @@ class ChemicalPage extends StatefulWidget {
 
 class _ChemicalPageState extends State<ChemicalPage> {
 
-  Future<List<Content>> list = DB.getListChemical();
+  Future<List<Content>> list = DBcontent.getListChemical();
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: const Color(0xFFA7AED3),
+        backgroundColor: const Color.fromARGB(255, 45, 16, 51),
         centerTitle: false,
         title: const Text(
           'Química',
