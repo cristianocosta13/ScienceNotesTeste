@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sciencenotes/domain/content.dart';
+import 'package:sciencenotes/assets/colors/custom_colors.dart';
 
 class QuestionCard extends StatefulWidget {
   final Content content;
@@ -89,7 +90,7 @@ class _QuestionCardState extends State<QuestionCard> {
                         'Responder',
                         style: TextStyle(
                           fontSize: 26,
-                          color: Colors.white,
+                          color: CustomColors.white,
                           fontFamily: 'AmaticSC-Regular',
                         ),
                       ),
@@ -104,7 +105,7 @@ class _QuestionCardState extends State<QuestionCard> {
                           '${widget.content.question[widget.index].
                       alterCorrect}!' : '',
                       style: const TextStyle(
-                        color: Colors.green,
+                        color: CustomColors.biologyColor,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
@@ -200,9 +201,9 @@ class _QuestionCardState extends State<QuestionCard> {
   void checkAlternative() {
     if (selectedValue ==
         widget.content.question[widget.index].alterCorrect) {
-      colorAltCorrect = Colors.green.shade600;
+      colorAltCorrect = CustomColors.biologyColor;
     } else {
-      colorAltIncorrect = CustomColors().getRedColor();
+      colorAltIncorrect = CustomColors.redColor;
     }
   }
 }

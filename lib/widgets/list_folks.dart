@@ -28,7 +28,7 @@ class _ListFolksState extends State<ListFolks> {
               children: [
                 TextButton(
                   onPressed:(){
-                    Navigator.push(
+                    Navigator.pop(
                       context, 
                       MaterialPageRoute(
                         builder: (context) {

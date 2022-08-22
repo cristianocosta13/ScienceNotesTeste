@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sciencenotes/assets/colors/custom_colors.dart';
 import 'package:sciencenotes/domain/content.dart';
 import 'package:sciencenotes/pages/subject_page.dart';
 
@@ -71,7 +72,7 @@ class _ContentCardState extends State<ContentCard> {
                           'Ver mais',
                           style: TextStyle(
                               fontSize: 16,
-                              color: Colors.white,
+                              color: CustomColors.white,
                               fontFamily: 'AmaticSC-Regular'
                           ),
                         ),

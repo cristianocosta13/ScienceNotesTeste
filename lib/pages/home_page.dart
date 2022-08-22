@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sciencenotes/pages/biology_page.dart';
+import 'package:sciencenotes/assets/colors/custom_colors.dart';
 import 'package:sciencenotes/widgets/science_card.dart';
 import 'package:sciencenotes/pages/physical_page.dart';
 import 'package:sciencenotes/pages/chemical_page.dart';
@@ -20,20 +21,20 @@ class HomePageState extends State<HomePage> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: false,
-        backgroundColor: CustomColors().getAppeButtonColor(),
+        backgroundColor: CustomColors.appeButtonColor,
         title: const Text(
           'Sciences Notes',
-          style: TextStyle(fontSize: 24, color: Colors.white,  fontFamily: 'Staatliches'),
+          style: TextStyle(fontSize: 24, color: CustomColors.white,  fontFamily: 'Staatliches'),
         ),
       ),
-      backgroundColor: CustomColors().getGradienColor(),
+      backgroundColor: CustomColors.gradienColor,
       body: Padding(
         padding: const EdgeInsets.all(8.0),
         child: ListView(
           children: [
             ScienceCard(
-              colorButton: CustomColors().getPhisicsColor(),
-              colorCard: CustomColors().getPhisicsColor(),
+              colorButton: CustomColors.phisicsColor,
+              colorCard: CustomColors.phisicsColor,
               scienceName: 'Física',
               scienceImage: 'lib/assets/images/fisica.png',
               directionPage: () {
@@ -48,8 +49,8 @@ class HomePageState extends State<HomePage> {
               },
             ),
             ScienceCard(
-              colorButton: CustomColors().getChemistryColor();
-              colorCard: CustomColors().getChemistryColor();
+              colorButton: CustomColors.chemistryColor,
+              colorCard: CustomColors.chemistryColor,
               scienceName: 'Química',
               scienceImage: 'lib/assets/images/quimica.png',
               directionPage: () {
@@ -64,8 +65,8 @@ class HomePageState extends State<HomePage> {
               },
             ),
             ScienceCard(
-              colorButton: CustomColors().getBiologyColor(),
-              colorCard: CustomColors().getBiologyColor(),
+              colorButton: CustomColors.biologyColor,
+              colorCard: CustomColors.biologyColor,
               scienceName: 'Biologia',
               scienceImage: 'lib/assets/images/biologia.png',
               directionPage: () {

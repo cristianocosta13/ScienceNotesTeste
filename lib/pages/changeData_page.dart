@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sciencenotes/assets/colors/custom_colors.dart';
 import 'package:sciencenotes/pages/register_page.dart';
 import 'package:sciencenotes/pages/enter_page.dart';
 import 'package:sciencenotes/pages/profile_page.dart';
@@ -26,14 +27,14 @@ class _ChangeDataPage extends State<ChangeDataPage>{
         child: Scaffold (
           appBar: AppBar(
             centerTitle:false,
-            backgroundColor: CustomColors().getAppeButtonColor(),
+            backgroundColor: CustomColors.appeButtonColor,
             title: const Text(
               'Science Notes',
-              style: TextStyle(fontSize: 24, color:Colors.white, fontFamily:'Staatliches'),
+              style: TextStyle(fontSize: 24, color:CustomColors.white, fontFamily:'Staatliches'),
 
             ),
           ),
-          backgroundColor: CustomColors().getGradienColor(),
+          backgroundColor: CustomColors.gradienColor,
           body: Center(
             child: Padding(
               padding: const EdgeInsets.all(20.0),
@@ -46,7 +47,7 @@ class _ChangeDataPage extends State<ChangeDataPage>{
                             'Deseja alterar os dados?',
                             style: TextStyle(
                               fontSize: 30,
-                              color: CustomColors().getAppeButtonColor(),
+                              color: CustomColors.appeButtonColor,
                               fontFamily: 'Abel-Regular',
                             ),
                           ),
@@ -54,7 +55,7 @@ class _ChangeDataPage extends State<ChangeDataPage>{
                           const Text(
                             'Para alterar os dados preencha os campos com os novos dados',
                             style: TextStyle(
-                              color: Colors.black38,
+                              color: CustomColors.grey,
                               fontSize: 22,
                               fontFamily: 'Abel-Regular',
                             ),
@@ -123,14 +124,14 @@ class _ChangeDataPage extends State<ChangeDataPage>{
                           ElevatedButton(
                             onPressed: onPressedButton,
                             style: ElevatedButton.styleFrom(
-                              primary: CustomColors().getAppeButtonColor(),
+                              primary: CustomColors.appeButtonColor,
                               minimumSize: (const Size(200, 40)),
                             ),
                             child: const Text(
                               'SALVAR ALTERAÇÕES',
                               style: TextStyle(
                                 fontSize: 28,
-                                color: Colors.white,
+                                color: CustomColors.white,
                                 fontFamily: 'AmaticSC-Regular',
                               ),
                             ),
@@ -147,7 +148,7 @@ class _ChangeDataPage extends State<ChangeDataPage>{
 
   void onPressedButton() {
     if (_formKey.currentState!.validate()) {
-      Navigator.push(
+      Navigator.pop(
         context,
         MaterialPageRoute(
           builder: (context) {

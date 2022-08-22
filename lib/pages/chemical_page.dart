@@ -1,6 +1,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:sciencenotes/data/DBcontent.dart';
+import 'package:sciencenotes/assets/colors/custom_colors.dart';
 import 'package:sciencenotes/widgets/content_card.dart';
 import 'package:sciencenotes/domain/content.dart';
 
@@ -19,18 +20,18 @@ class _ChemicalPageState extends State<ChemicalPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: CustomColors().getAppeButtonColor(),
+        backgroundColor: CustomColors.appeButtonColor,
         centerTitle: false,
         title: const Text(
           'Química',
-          style: TextStyle(fontSize: 24,color: Colors.white,  fontFamily: 'Staatliches'),
+          style: TextStyle(fontSize: 24,color: CustomColors.white,  fontFamily: 'Staatliches'),
         ),
       ),
-      backgroundColor: Colors.deepPurple.shade50,
+      backgroundColor: CustomColors.chemistryColor,
       body: Padding(
         padding: const EdgeInsets.all(8.0),
         child: Container(
-          color: Colors.deepPurple.shade50,
+          color: CustomColors.chemistryColor,
           child: ListView(
             children: [
               buildListView(),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sciencenotes/assets/colors/custom_colors.dart';
 import 'package:sciencenotes/pages/profile_page.dart';
 import 'package:sciencenotes/pages/register_page.dart';
 import 'package:sciencenotes/pages/home_page.dart';
@@ -25,13 +26,13 @@ class _EnterPageState extends State<EnterPage> {
       child: Scaffold(
         appBar: AppBar(
           centerTitle: false,
-          backgroundColor: CustomColors().getAppeButtonColor(),
+          backgroundColor: CustomColors.appeButtonColor,
           title: const Text(
             'Science Notes',
             style: TextStyle(fontSize: 24, color: Colors.white, fontFamily: 'Staatliches'),
           ),
         ),
-        backgroundColor: const CustomColors().getGradienColor(),
+        backgroundColor: CustomColors.gradienColor,
         body: Center(
           child: Padding(
             padding: const EdgeInsets.all(20.0),
@@ -53,7 +54,7 @@ class _EnterPageState extends State<EnterPage> {
                         icon: Icon(Icons.account_box),
                         labelText: 'Usuário',
                         labelStyle: TextStyle(
-                          color: Colors.black,
+                          color: CustomColors.textColor,
                           fontFamily: 'Abel-Regular',
                         ),
                       ),
@@ -65,7 +66,7 @@ class _EnterPageState extends State<EnterPage> {
                         icon: Icon(Icons.lock),
                         labelText: 'Senha',
                         labelStyle: TextStyle(
-                          color: Colors.black,
+                          color: CustomColors.textColor,
                           fontFamily: 'Abel-Regular',
                         ),
                       ),
@@ -83,14 +84,14 @@ class _EnterPageState extends State<EnterPage> {
                         ElevatedButton(
                           onPressed: onPressedButton,
                           style: ElevatedButton.styleFrom(
-                            primary: CustomColors().getAppeButtonColor(),
+                            primary: CustomColors.appeButtonColor,
                             minimumSize: (const Size(120, 40)),
                           ),
                           child: const Text(
                             'Logar',
                             style: TextStyle(
                               fontSize: 28,
-                              color: Colors.white,
+                              color: CustomColors.white,
                               fontFamily: 'AmaticSC-Regular',
                             ),
                           ),
@@ -109,7 +110,7 @@ class _EnterPageState extends State<EnterPage> {
                           },
                           child: const Text("Esqueci a minha senha",
                             style: TextStyle(
-                              color: CustomColors().getTextColor(),
+                              color: CustomColors.textColor,
                               fontSize: 15,
                               fontFamily: 'Abel-Regular',
                             ),
@@ -131,7 +132,7 @@ class _EnterPageState extends State<EnterPage> {
                       },
                       child: const Text("Não tem uma conta? Cadastre-se.",
                         style: TextStyle(
-                          color: CustomColors().getTextColor(),
+                          color: CustomColors.textColor,
                           fontSize: 16,
                           fontFamily: 'Abel-Regular',
                         ),

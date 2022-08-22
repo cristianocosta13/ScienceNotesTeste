@@ -1,6 +1,7 @@
 import 'package:sciencenotes/data/BDpeople.dart';
 import 'package:sciencenotes/domain/people.dart';
 import 'package:flutter/material.dart';
+import 'package:sciencenotes/assets/colors/custom_colors.dart';
 import 'package:sciencenotes/widgets/list_folks.dart';
 
 class listPeoplePage extends StatefulWidget {
@@ -18,13 +19,13 @@ class _listPeoplePageState extends State<listPeoplePage> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: false,
-        backgroundColor: CustomColors()getAppeButtonColor(),
+        backgroundColor: CustomColors.appeButtonColor,
         title: const Text(
           'Science Notes',
-          style: TextStyle(fontSize: 24, color: Colors.white, fontFamily: 'Staatliches'),
+          style: TextStyle(fontSize: 24, color: CustomColors.white, fontFamily: 'Staatliches'),
         ),
       ),
-      backgroundColor: CustomColors().getGradienColor(),
+      backgroundColor: CustomColors.gradienColor,
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: buildListView(),

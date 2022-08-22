@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:sciencenotes/domain/content.dart';
+import 'package:sciencenotes/assets/colors/custom_colors.dart';
 import 'package:sciencenotes/pages/enter_page.dart';
 import 'package:sciencenotes/pages/home_page.dart';
 
@@ -17,13 +18,13 @@ class _RegisterPageState extends State<RegisterPage> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: false,
-        backgroundColor: CustomColors().getAppeButtonColor(),
+        backgroundColor: CustomColors.appeButtonColor,
         title: const Text(
           'Science Notes',
-          style: TextStyle(fontSize: 24, color: Colors.white, fontFamily: 'Staatliches'),
+          style: TextStyle(fontSize: 24, color: CustomColors.white, fontFamily: 'Staatliches'),
         ),
       ),
-      backgroundColor: CustomColors().getGradienColor(),
+      backgroundColor: CustomColors.gradienColor,
       body: Center(
         child: Padding(
           padding: const EdgeInsets.all(20.0),
@@ -36,7 +37,7 @@ class _RegisterPageState extends State<RegisterPage> {
                   "Criar conta",
                   style: TextStyle(
                     fontSize: 36,
-                    color: CustomColors().getTextColor(),
+                    color: CustomColors.textColor,
                     fontFamily: 'Staatliches',
                   ),
                 ),
@@ -46,7 +47,7 @@ class _RegisterPageState extends State<RegisterPage> {
                     icon: Icon(Icons.person_pin_rounded),
                     labelText: 'User',
                     labelStyle: TextStyle(
-                      color: Colors.black,
+                      color: CustomColors.textColor,
                       fontFamily: 'Abel-Regular',
                     ),
                   ),
@@ -57,7 +58,7 @@ class _RegisterPageState extends State<RegisterPage> {
                     icon: Icon(Icons.person),
                     labelText: 'Nome completo',
                     labelStyle: TextStyle(
-                      color: Colors.black,
+                      color: CustomColors.textColor,
                       fontFamily: 'Abel-Regular',
                     ),
                   ),
@@ -69,7 +70,7 @@ class _RegisterPageState extends State<RegisterPage> {
                     icon: Icon(CupertinoIcons.calendar),
                     labelText: 'Data de nascimento',
                     labelStyle: TextStyle(
-                      color: Colors.black,
+                      color: CustomColors.textColor,
                       fontFamily: 'Abel-Regular',
                     ),
                   ),
@@ -81,7 +82,7 @@ class _RegisterPageState extends State<RegisterPage> {
                     icon: Icon(CupertinoIcons.envelope_fill),
                     labelText: 'Email',
                     labelStyle: TextStyle(
-                      color: Colors.black,
+                      color: CustomColors.textColor,
                       fontFamily: 'Abel-Regular',
                     ),
                   ),
@@ -93,7 +94,7 @@ class _RegisterPageState extends State<RegisterPage> {
                     icon: Icon(CupertinoIcons.lock_shield_fill),
                     labelText: 'Senha',
                     labelStyle: TextStyle(
-                        color: Colors.black,
+                        color: CustomColors.textColor,
                         fontFamily: 'Abel-Regular',
                       ),
                     ),
@@ -102,14 +103,14 @@ class _RegisterPageState extends State<RegisterPage> {
                 ElevatedButton(
                   onPressed: onPressedButton,
                   style: ElevatedButton.styleFrom(
-                    primary: CustomColors().getAppeButtonColor(),
+                    primary: CustomColors.appeButtonColor,
                     minimumSize: (const Size(170, 40)),
                   ),
                   child: const Text(
                     'Cadastrar',
                     style: TextStyle(
                       fontSize: 28,
-                      color: Colors.white,
+                      color: CustomColors.white,
                       fontFamily: 'AmaticSC-Regular',
                     ),
                   ),

@@ -1,0 +1,4 @@
+#Mon Aug 22 15:41:50 BRT 2022
+base.0=C\:\\Users\\f_jul\\sciencenotes\\ScienceNotesTeste\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+renamed.0=classes.dex
+path.0=classes.dex

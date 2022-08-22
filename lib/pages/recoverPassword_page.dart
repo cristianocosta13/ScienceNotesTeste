@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sciencenotes/assets/colors/custom_colors.dart';
 import 'package:sciencenotes/pages/register_page.dart';
 import 'package:sciencenotes/pages/enter_page.dart';
 
@@ -15,13 +16,13 @@ class _RecoverPasswordPageState extends State<RecoverPasswordPage> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: false,
-        backgroundColor: CustomColors().getAppeButtonColor(),
+        backgroundColor: CustomColors.appeButtonColor,
         title: const Text(
           'Science Notes',
-          style: TextStyle(fontSize: 24, color: Colors.white, fontFamily: 'Staatliches'),
+          style: TextStyle(fontSize: 24, color: CustomColors.white, fontFamily: 'Staatliches'),
         ),
       ),
-      backgroundColor: CustomColors().getGradienColor(),
+      backgroundColor: CustomColors.gradienColor,
       body: Center(
         child: Padding(
           padding: const EdgeInsets.all(20.0),
@@ -32,7 +33,7 @@ class _RecoverPasswordPageState extends State<RecoverPasswordPage> {
                   'Esqueceu a senha?',
                   style: TextStyle(
                     fontSize: 30,
-                    color: CustomColors().getTextColor(),
+                    color: CustomColors.textColor,
                     fontFamily: 'Abel-Regular',
                   ),
                 ),
@@ -40,7 +41,7 @@ class _RecoverPasswordPageState extends State<RecoverPasswordPage> {
                 const Text(
                   'Para recuperar seu acesso, preencha o campo com o e-mail cadastrado em sua conta e a sua nova senha.',
                   style: TextStyle(
-                      color: Colors.black54,
+                      color: CustomColors.grey,
                       fontSize: 20,
                       fontFamily: 'Abel-Regular',
                   ),
@@ -52,7 +53,7 @@ class _RecoverPasswordPageState extends State<RecoverPasswordPage> {
                     icon: Icon(Icons.email),
                     labelText: 'E-mail',
                     labelStyle: TextStyle(
-                      color: Colors.black,
+                      color: CustomColors.textColor,
                       fontFamily: 'Abel-Regular',
                     ),
                   ),
@@ -64,7 +65,7 @@ class _RecoverPasswordPageState extends State<RecoverPasswordPage> {
                     icon: Icon(Icons.lock),
                     labelText: 'Senha',
                     labelStyle: TextStyle(
-                      color: Colors.black,
+                      color: CustomColors.textColor,
                       fontFamily: 'Abel-Regular',
                     ),
                   ),
@@ -73,14 +74,14 @@ class _RecoverPasswordPageState extends State<RecoverPasswordPage> {
                 ElevatedButton(
                   onPressed: onPressedButton,
                   style: ElevatedButton.styleFrom(
-                    primary: CustomColors().getAppeButtonColor(),
+                    primary: CustomColors.appeButtonColor,
                     minimumSize: (const Size(200, 40)),
                   ),
                   child: const Text(
                     'Recuperar acesso',
                     style: TextStyle(
                       fontSize: 28,
-                      color: Colors.white,
+                      color: CustomColors.white,
                       fontFamily: 'AmaticSC-Regular',
                     ),
                   ),

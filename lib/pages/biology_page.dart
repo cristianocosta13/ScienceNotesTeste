@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sciencenotes/data/DBcontent.dart';
+import 'package:sciencenotes/assets/colors/custom_colors.dart';
 import 'package:sciencenotes/widgets/content_card.dart';
 import 'package:sciencenotes/domain/content.dart';
 
@@ -18,18 +19,18 @@ class _BiologyPageState extends State<BiologyPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: CustomColors().getAppeButtonColor(),
+        backgroundColor: CustomColors.appeButtonColor,
         centerTitle: false,
         title: const Text(
           'Biologia',
-          style: TextStyle(fontSize: 24,color: Colors.white,  fontFamily: 'Staatliches'),
+          style: TextStyle(fontSize: 24,color: CustomColors.white,  fontFamily: 'Staatliches'),
         ),
       ),
-      backgroundColor: Colors.green.shade50,
+      backgroundColor: CustomColors.chemistryColor,
       body: Padding(
         padding: const EdgeInsets.all(8.0),
         child: Container(
-          color: Colors.green.shade50,
+          color: CustomColors.chemistryColor,
           child: ListView(
             children: [
               buildListView(),

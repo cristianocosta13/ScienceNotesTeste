@@ -1,5 +1,4 @@
-// import 'package:flutter/src/foundation/key.dart';
-// import 'package:flutter/src/widgets/framework.dart';
+import 'package:sciencenotes/assets/colors/custom_colors.dart';
 import 'package:sciencenotes/pages/home_page.dart';
 import 'package:sciencenotes/pages/resume_page.dart';
 import 'package:flutter/cupertino.dart';
@@ -38,7 +37,7 @@ class _SubjectPageState extends State<SubjectPage> {
         title: Text(
           selectedIndex==3 ? 'Science Notes' : widget.content.title,
           style: const TextStyle(
-              fontSize: 24, color: Colors.white,  fontFamily: 'Staatliches'),
+              fontSize: 24, color: CustomColors.white,  fontFamily: 'Staatliches'),
         ),
         actions: [
           IconButton(
@@ -46,16 +45,16 @@ class _SubjectPageState extends State<SubjectPage> {
             onPressed: onPressedButton,
           ),
         ],
-        backgroundColor: CustomColors().getAppeButtonColor(),
+        backgroundColor: CustomColors.appeButtonColor,
       ),
-      backgroundColor:CustomColors().getGradienColor(),
+      backgroundColor:CustomColors.gradienColor,
       body: pages[selectedIndex],
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: selectedIndex,
         onTap: directionPage,
         showUnselectedLabels: true,
-        unselectedItemColor: Colors.deepPurple.shade50,
-        selectedItemColor: Colors.deepPurple.shade200,
+        unselectedItemColor: CustomColors.chemistryColor,
+        selectedItemColor: CustomColors.chemistryColor,
         type: BottomNavigationBarType.fixed,
         items: const [
           BottomNavigationBarItem(
