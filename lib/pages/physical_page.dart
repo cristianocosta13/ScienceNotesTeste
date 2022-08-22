@@ -19,7 +19,7 @@ class _PhysicalPageState extends State<PhysicalPage> {
 
   return Scaffold(
       appBar: AppBar(
-        backgroundColor: const Color.fromARGB(255, 45, 16, 51),
+        backgroundColor: CustomColors().getAppeButtonColor(),
         centerTitle: false,
         title: const Text(
           'Física',

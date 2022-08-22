@@ -15,13 +15,13 @@ class _RecoverPasswordPageState extends State<RecoverPasswordPage> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: false,
-        backgroundColor: const Color.fromARGB(255, 45, 16, 51),
+        backgroundColor: CustomColors().getAppeButtonColor(),
         title: const Text(
           'Science Notes',
           style: TextStyle(fontSize: 24, color: Colors.white, fontFamily: 'Staatliches'),
         ),
       ),
-      backgroundColor: const Color.fromARGB(255, 216, 194, 221),
+      backgroundColor: CustomColors().getGradienColor(),
       body: Center(
         child: Padding(
           padding: const EdgeInsets.all(20.0),
@@ -32,7 +32,7 @@ class _RecoverPasswordPageState extends State<RecoverPasswordPage> {
                   'Esqueceu a senha?',
                   style: TextStyle(
                     fontSize: 30,
-                    color: Color.fromARGB(255, 45, 16, 51),
+                    color: CustomColors().getTextColor(),
                     fontFamily: 'Abel-Regular',
                   ),
                 ),
@@ -73,7 +73,7 @@ class _RecoverPasswordPageState extends State<RecoverPasswordPage> {
                 ElevatedButton(
                   onPressed: onPressedButton,
                   style: ElevatedButton.styleFrom(
-                    primary: const Color.fromARGB(255, 45, 16, 51),
+                    primary: CustomColors().getAppeButtonColor(),
                     minimumSize: (const Size(200, 40)),
                   ),
                   child: const Text(

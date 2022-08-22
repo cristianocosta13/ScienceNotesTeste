@@ -103,7 +103,7 @@ class _ListProfileState extends State<ListProfile> {
               ElevatedButton(
                 onPressed: onPressedButton,
                   style: ElevatedButton.styleFrom(
-                    primary: const Color.fromARGB(255, 45, 16, 51),
+                    primary:CustomColors().getAppeButtonColor(),
                   ),
                   child: const Text(
                     'ALTERAR DADOS CADASTRAIS',

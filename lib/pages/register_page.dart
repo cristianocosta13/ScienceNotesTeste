@@ -17,13 +17,13 @@ class _RegisterPageState extends State<RegisterPage> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: false,
-        backgroundColor: const Color.fromARGB(255, 45, 16, 51),
+        backgroundColor: CustomColors().getAppeButtonColor(),
         title: const Text(
           'Science Notes',
           style: TextStyle(fontSize: 24, color: Colors.white, fontFamily: 'Staatliches'),
         ),
       ),
-      backgroundColor: const Color.fromARGB(255, 216, 194, 221),
+      backgroundColor: CustomColors().getGradienColor(),
       body: Center(
         child: Padding(
           padding: const EdgeInsets.all(20.0),
@@ -36,7 +36,7 @@ class _RegisterPageState extends State<RegisterPage> {
                   "Criar conta",
                   style: TextStyle(
                     fontSize: 36,
-                    color: Color.fromARGB(255, 45, 16, 51),
+                    color: CustomColors().getTextColor(),
                     fontFamily: 'Staatliches',
                   ),
                 ),
@@ -102,7 +102,7 @@ class _RegisterPageState extends State<RegisterPage> {
                 ElevatedButton(
                   onPressed: onPressedButton,
                   style: ElevatedButton.styleFrom(
-                    primary: const Color.fromARGB(255, 45, 16, 51),
+                    primary: CustomColors().getAppeButtonColor(),
                     minimumSize: (const Size(170, 40)),
                   ),
                   child: const Text(

@@ -202,7 +202,7 @@ class _QuestionCardState extends State<QuestionCard> {
         widget.content.question[widget.index].alterCorrect) {
       colorAltCorrect = Colors.green.shade600;
     } else {
-      colorAltIncorrect = Color(0xffff6961);
+      colorAltIncorrect = CustomColors().getRedColor();
     }
   }
 }

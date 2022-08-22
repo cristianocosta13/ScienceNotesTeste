@@ -25,13 +25,13 @@ class _EnterPageState extends State<EnterPage> {
       child: Scaffold(
         appBar: AppBar(
           centerTitle: false,
-          backgroundColor: const Color.fromARGB(255, 45, 16, 51),
+          backgroundColor: CustomColors().getAppeButtonColor(),
           title: const Text(
             'Science Notes',
             style: TextStyle(fontSize: 24, color: Colors.white, fontFamily: 'Staatliches'),
           ),
         ),
-        backgroundColor: const Color.fromARGB(255, 216, 194, 221),
+        backgroundColor: const CustomColors().getGradienColor(),
         body: Center(
           child: Padding(
             padding: const EdgeInsets.all(20.0),
@@ -83,7 +83,7 @@ class _EnterPageState extends State<EnterPage> {
                         ElevatedButton(
                           onPressed: onPressedButton,
                           style: ElevatedButton.styleFrom(
-                            primary: const Color.fromARGB(255, 45, 16, 51),
+                            primary: CustomColors().getAppeButtonColor(),
                             minimumSize: (const Size(120, 40)),
                           ),
                           child: const Text(
@@ -109,7 +109,7 @@ class _EnterPageState extends State<EnterPage> {
                           },
                           child: const Text("Esqueci a minha senha",
                             style: TextStyle(
-                              color: Color.fromARGB(186, 0, 0, 0),
+                              color: CustomColors().getTextColor(),
                               fontSize: 15,
                               fontFamily: 'Abel-Regular',
                             ),
@@ -131,7 +131,7 @@ class _EnterPageState extends State<EnterPage> {
                       },
                       child: const Text("Não tem uma conta? Cadastre-se.",
                         style: TextStyle(
-                          color: Color.fromARGB(186, 0, 0, 0),
+                          color: CustomColors().getTextColor(),
                           fontSize: 16,
                           fontFamily: 'Abel-Regular',
                         ),

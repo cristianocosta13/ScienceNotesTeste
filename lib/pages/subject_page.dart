@@ -46,9 +46,9 @@ class _SubjectPageState extends State<SubjectPage> {
             onPressed: onPressedButton,
           ),
         ],
-        backgroundColor: const Color.fromARGB(255, 45, 16, 51),
+        backgroundColor: CustomColors().getAppeButtonColor(),
       ),
-      backgroundColor: const Color.fromARGB(255, 216, 194, 221),
+      backgroundColor:CustomColors().getGradienColor(),
       body: pages[selectedIndex],
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: selectedIndex,

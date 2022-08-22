@@ -18,13 +18,13 @@ class _listPeoplePageState extends State<listPeoplePage> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: false,
-        backgroundColor: Color.fromARGB(255, 45, 16, 51),
+        backgroundColor: CustomColors()getAppeButtonColor(),
         title: const Text(
           'Science Notes',
           style: TextStyle(fontSize: 24, color: Colors.white, fontFamily: 'Staatliches'),
         ),
       ),
-      backgroundColor: Color.fromARGB(255, 216, 194, 221),
+      backgroundColor: CustomColors().getGradienColor(),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: buildListView(),
