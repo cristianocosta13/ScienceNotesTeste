@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:sciencenotes/pages/biology_page.dart';
 import 'package:sciencenotes/assets/colors/custom_colors.dart';
 import 'package:sciencenotes/widgets/science_card.dart';
-import 'package:sciencenotes/pages/physical_page.dart';
-import 'package:sciencenotes/pages/chemical_page.dart';
+import 'package:sciencenotes/pages/physics_page.dart';
+import 'package:sciencenotes/pages/chemistry_page.dart';
 
 class HomePage extends StatefulWidget{
   const HomePage({Key? key}) : super(key: key);
@@ -42,7 +42,7 @@ class HomePageState extends State<HomePage> {
                   context,
                   MaterialPageRoute(
                     builder: (context) {
-                      return const PhysicalPage();
+                      return const PhysicsPage();
                     },
                   ),
                 );
@@ -58,7 +58,7 @@ class HomePageState extends State<HomePage> {
                   context,
                   MaterialPageRoute(
                     builder: (context) {
-                      return const ChemicalPage();
+                      return const ChemistryPage();
                     },
                   ),
                 );

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:sciencenotes/assets/colors/custom_colors.dart';
-import 'package:sciencenotes/pages/register_page.dart';
 import 'package:sciencenotes/pages/enter_page.dart';
 
 class RecoverPasswordPage extends StatefulWidget {
@@ -50,11 +49,16 @@ class _RecoverPasswordPageState extends State<RecoverPasswordPage> {
                 const SizedBox(height: 42),
                 TextFormField(
                   decoration: const InputDecoration(
-                    icon: Icon(Icons.email),
+                    icon: Icon(Icons.email, color: CustomColors.appeButtonColor),
                     labelText: 'E-mail',
                     labelStyle: TextStyle(
                       color: CustomColors.textColor,
                       fontFamily: 'Abel-Regular',
+                    ),
+                    focusedBorder: UnderlineInputBorder(
+                      borderSide: BorderSide(
+                        color: CustomColors.appeButtonColor,
+                      ),
                     ),
                   ),
                 ),
@@ -62,11 +66,16 @@ class _RecoverPasswordPageState extends State<RecoverPasswordPage> {
                 TextFormField(
                   obscureText: true,
                   decoration: const InputDecoration(
-                    icon: Icon(Icons.lock),
+                    icon: Icon(Icons.lock, color: CustomColors.appeButtonColor),
                     labelText: 'Senha',
                     labelStyle: TextStyle(
                       color: CustomColors.textColor,
                       fontFamily: 'Abel-Regular',
+                    ),
+                    focusedBorder: UnderlineInputBorder(
+                      borderSide: BorderSide(
+                        color: CustomColors.appeButtonColor,
+                      ),
                     ),
                   ),
                 ),

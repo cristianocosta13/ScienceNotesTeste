@@ -51,11 +51,16 @@ class _EnterPageState extends State<EnterPage> {
                         return null;
                       },
                       decoration: const InputDecoration(
-                        icon: Icon(Icons.account_box),
+                        icon: Icon(Icons.account_box, color: CustomColors.appeButtonColor),
                         labelText: 'Usuário',
                         labelStyle: TextStyle(
                           color: CustomColors.textColor,
                           fontFamily: 'Abel-Regular',
+                        ),
+                        focusedBorder: UnderlineInputBorder(
+                          borderSide: BorderSide(
+                            color: CustomColors.appeButtonColor,
+                          ),
                         ),
                       ),
                     ),
@@ -63,11 +68,16 @@ class _EnterPageState extends State<EnterPage> {
                       controller: passwordController,
                       obscureText: true,
                       decoration: const InputDecoration(
-                        icon: Icon(Icons.lock),
+                        icon: Icon(Icons.lock, color: CustomColors.appeButtonColor),
                         labelText: 'Senha',
                         labelStyle: TextStyle(
                           color: CustomColors.textColor,
                           fontFamily: 'Abel-Regular',
+                        ),
+                        focusedBorder: UnderlineInputBorder(
+                          borderSide: BorderSide(
+                            color: CustomColors.appeButtonColor,
+                          ),
                         ),
                       ),
                       validator: (value) {

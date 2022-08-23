@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:sciencenotes/pages/enter_page.dart';
-import 'package:sciencenotes/pages/home_page.dart';
-import 'package:sciencenotes/pages/changeData_page.dart';
 import 'package:sciencenotes/data/BDpeople.dart';
 import 'package:sciencenotes/domain/people.dart';
 import 'package:sciencenotes/widgets/list_profile.dart';

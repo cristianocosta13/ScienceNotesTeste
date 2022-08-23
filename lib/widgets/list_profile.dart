@@ -179,13 +179,14 @@ class _ListProfileState extends State<ListProfile> {
   }
 
   void onPressedButton3(){
-    Navigator.push(
+    Navigator.pushAndRemoveUntil(
       context,
       MaterialPageRoute(
         builder: (context){
           return const EnterPage();
         },
       ),
+      (Route<dynamic> route) => false,
     );
   }
 

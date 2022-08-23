@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sciencenotes/domain/content.dart';
 import 'package:sciencenotes/widgets/question_card.dart';
-import 'package:carousel_slider/carousel_slider.dart';
 
 class QuestionsPage extends StatefulWidget {
   final Content conteudo;

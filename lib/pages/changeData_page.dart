@@ -71,8 +71,13 @@ class _ChangeDataPage extends State<ChangeDataPage>{
                               return null;
                             },
                             decoration: const InputDecoration(
-                              icon: Icon(Icons.person),
+                              icon: Icon(Icons.person, color: CustomColors.appeButtonColor),
                               labelText: 'Nome',
+                              focusedBorder: UnderlineInputBorder(
+                                borderSide: BorderSide(
+                                  color: CustomColors.appeButtonColor,
+                                ),
+                              ),
                             ),
                           ),
                           const SizedBox(height: 20),
@@ -86,8 +91,13 @@ class _ChangeDataPage extends State<ChangeDataPage>{
                               return null;
                             },
                             decoration: const InputDecoration(
-                              icon: Icon(Icons.person_pin_rounded),
+                              icon: Icon(Icons.person_pin_rounded, color: CustomColors.appeButtonColor),
                               labelText: 'User',
+                              focusedBorder: UnderlineInputBorder(
+                                borderSide: BorderSide(
+                                  color: CustomColors.appeButtonColor,
+                                ),
+                              ),
                             ),
                           ),
                           const SizedBox(height: 32),
@@ -101,8 +111,13 @@ class _ChangeDataPage extends State<ChangeDataPage>{
                               return null;
                             },
                             decoration: const InputDecoration(
-                              icon: Icon(Icons.email_outlined),
+                              icon: Icon(Icons.email_outlined, color: CustomColors.appeButtonColor),
                               labelText: 'Email',
+                              focusedBorder: UnderlineInputBorder(
+                                borderSide: BorderSide(
+                                  color: CustomColors.appeButtonColor,
+                                ),
+                              ),
                             ),
                           ),
                           const SizedBox(height: 40),
@@ -115,9 +130,15 @@ class _ChangeDataPage extends State<ChangeDataPage>{
 
                               return null;
                             },
+                            keyboardType: TextInputType.datetime,
                             decoration: const InputDecoration(
-                              icon: Icon(Icons.restore),
-                              labelText: 'Idade',
+                              icon: Icon(Icons.restore, color: CustomColors.appeButtonColor),
+                              labelText: 'Data de Nascimnento',
+                              focusedBorder: UnderlineInputBorder(
+                                borderSide: BorderSide(
+                                  color: CustomColors.appeButtonColor,
+                                ),
+                              ),
                             ),
                           ),
                           const SizedBox(height: 76),

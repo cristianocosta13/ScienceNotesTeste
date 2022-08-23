@@ -1,9 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:sciencenotes/domain/content.dart';
 import 'package:sciencenotes/assets/colors/custom_colors.dart';
 import 'package:sciencenotes/pages/enter_page.dart';
-import 'package:sciencenotes/pages/home_page.dart';
 
 class RegisterPage extends StatefulWidget {
   const RegisterPage({Key? key}) : super(key: key);
@@ -44,22 +42,32 @@ class _RegisterPageState extends State<RegisterPage> {
                 const SizedBox(height: 36),
                 TextFormField(
                   decoration: const InputDecoration(
-                    icon: Icon(Icons.person_pin_rounded),
+                    icon: Icon(Icons.person_pin_rounded, color: CustomColors.appeButtonColor),
                     labelText: 'User',
                     labelStyle: TextStyle(
                       color: CustomColors.textColor,
                       fontFamily: 'Abel-Regular',
+                    ),
+                    focusedBorder: UnderlineInputBorder(
+                      borderSide: BorderSide(
+                        color: CustomColors.appeButtonColor,
+                      ),
                     ),
                   ),
                 ),
                 const SizedBox(height: 8),
                 TextFormField(
                   decoration: const InputDecoration(
-                    icon: Icon(Icons.person),
+                    icon: Icon(Icons.person, color: CustomColors.appeButtonColor),
                     labelText: 'Nome completo',
                     labelStyle: TextStyle(
                       color: CustomColors.textColor,
                       fontFamily: 'Abel-Regular',
+                    ),
+                    focusedBorder: UnderlineInputBorder(
+                      borderSide: BorderSide(
+                        color: CustomColors.appeButtonColor,
+                      ),
                     ),
                   ),
                 ),
@@ -67,11 +75,16 @@ class _RegisterPageState extends State<RegisterPage> {
                 TextFormField(
                   keyboardType: TextInputType.datetime,
                   decoration: const InputDecoration(
-                    icon: Icon(CupertinoIcons.calendar),
+                    icon: Icon(CupertinoIcons.calendar, color: CustomColors.appeButtonColor),
                     labelText: 'Data de nascimento',
                     labelStyle: TextStyle(
                       color: CustomColors.textColor,
                       fontFamily: 'Abel-Regular',
+                    ),
+                    focusedBorder: UnderlineInputBorder(
+                      borderSide: BorderSide(
+                        color: CustomColors.appeButtonColor,
+                      ),
                     ),
                   ),
                 ),
@@ -79,11 +92,16 @@ class _RegisterPageState extends State<RegisterPage> {
                 TextFormField(
                   keyboardType: TextInputType.emailAddress,
                   decoration: const InputDecoration(
-                    icon: Icon(CupertinoIcons.envelope_fill),
+                    icon: Icon(CupertinoIcons.envelope_fill, color: CustomColors.appeButtonColor),
                     labelText: 'Email',
                     labelStyle: TextStyle(
                       color: CustomColors.textColor,
                       fontFamily: 'Abel-Regular',
+                    ),
+                    focusedBorder: UnderlineInputBorder(
+                      borderSide: BorderSide(
+                        color: CustomColors.appeButtonColor,
+                      ),
                     ),
                   ),
                 ),
@@ -91,11 +109,16 @@ class _RegisterPageState extends State<RegisterPage> {
                 TextFormField(
                   obscureText: true,
                   decoration: const InputDecoration(
-                    icon: Icon(CupertinoIcons.lock_shield_fill),
+                    icon: Icon(CupertinoIcons.lock_shield_fill, color: CustomColors.appeButtonColor),
                     labelText: 'Senha',
                     labelStyle: TextStyle(
                         color: CustomColors.textColor,
                         fontFamily: 'Abel-Regular',
+                      ),
+                      focusedBorder: UnderlineInputBorder(
+                        borderSide: BorderSide(
+                          color: CustomColors.appeButtonColor,
+                        ),
                       ),
                     ),
                 ),
