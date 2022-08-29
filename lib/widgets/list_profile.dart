@@ -172,7 +172,7 @@ class _ListProfileState extends State<ListProfile> {
       context,
       MaterialPageRoute(
         builder: (context){
-          return const listPeoplePage();
+          return const 
         },
       ),
     );
