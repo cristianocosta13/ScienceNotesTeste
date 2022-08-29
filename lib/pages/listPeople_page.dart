@@ -16,7 +16,28 @@ class _listPeoplePageState extends State<listPeoplePage> {
 
   @override
   Widget build(BuildContext context) {
+    padding: const EdgeInsets.all(24),
     return Scaffold(
+        home: Scaffold(
+          drawer: Drawer(
+            child: Column(
+              childreen: [
+                ListTile(
+                  leading: Icon(Icons.attach_money, color: Colors.people),
+                  title: Text('Visualizar outros usuários'),
+                  onTap: () => 
+                  Navigator.of(context).pushReplacement(MaterialPageRoute(
+                    builder: (context) => const listPeoplePage(),
+                  )
+
+                )
+                
+               )
+            
+              ]
+            )
+          )
+        )
       appBar: AppBar(
         centerTitle: false,
         backgroundColor: CustomColors.appeButtonColor,
