@@ -26,8 +26,7 @@ class _RegisterPageState extends State<RegisterPage> {
       body: Center(
         child: Padding(
           padding: const EdgeInsets.all(20.0),
-          child: SingleChildScrollView(
-            child: Column(
+          child: ListView(
               children: [
                 Image.asset('lib/assets/images/logo.png', height: 300,),
                 const SizedBox(height: 24),
@@ -141,7 +140,6 @@ class _RegisterPageState extends State<RegisterPage> {
               ],
             ),
           ),
-        ),
       ),
     );
   }

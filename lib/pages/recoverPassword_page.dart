@@ -25,7 +25,6 @@ class _RecoverPasswordPageState extends State<RecoverPasswordPage> {
       body: Center(
         child: Padding(
           padding: const EdgeInsets.all(20.0),
-          child: SingleChildScrollView(
             child: Column(
               children: [
                 const Text(
@@ -97,7 +96,6 @@ class _RecoverPasswordPageState extends State<RecoverPasswordPage> {
                 ),
               ],
             ),
-          ),
         ),
       ),
     );

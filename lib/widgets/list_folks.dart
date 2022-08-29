@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:sciencenotes/domain/people.dart';
-import 'package:sciencenotes/pages/listPeople_page.dart';
 import 'package:sciencenotes/pages/profile_page.dart';
 
 class ListFolks extends StatefulWidget {
